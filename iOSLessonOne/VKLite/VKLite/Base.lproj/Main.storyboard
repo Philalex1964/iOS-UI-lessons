@@ -18,6 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cv4-5w-76H">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -111,17 +112,83 @@
                             <constraint firstItem="DsL-Lb-zFA" firstAttribute="top" secondItem="Plp-Uz-S5o" secondAttribute="top" id="iR9-en-ry2"/>
                             <constraint firstItem="DsL-Lb-zFA" firstAttribute="top" secondItem="Plp-Uz-S5o" secondAttribute="top" id="yNs-nD-yFm"/>
                             <constraint firstItem="DsL-Lb-zFA" firstAttribute="leading" secondItem="Plp-Uz-S5o" secondAttribute="leading" id="zbc-YJ-Jhe"/>
+=======
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cv4-5w-76H">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIS-5N-X8d">
+                                <rect key="frame" x="186" y="288" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7H-Bv-SzJ">
+                                <rect key="frame" x="186" y="406" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KhC-eA-eqr">
+                                <rect key="frame" x="159" y="346" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rCu-th-fVt">
+                                <rect key="frame" x="159" y="482" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZV-17-itd">
+                                <rect key="frame" x="186" y="614" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGq-Ot-8b7">
+                                <rect key="frame" x="186" y="58" width="42" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="samolet" translatesAutoresizingMaskIntoConstraints="NO" id="rHz-V6-8Fg">
+                                <rect key="frame" x="166" y="155" width="83" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.82472373440000002" green="0.96929161959999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Plp-Uz-S5o" firstAttribute="trailing" secondItem="cv4-5w-76H" secondAttribute="trailing" id="P8P-39-cyx"/>
+                            <constraint firstItem="cv4-5w-76H" firstAttribute="top" secondItem="wf3-Xl-R8k" secondAttribute="top" id="ZoP-qS-1vI"/>
+                            <constraint firstAttribute="bottom" secondItem="cv4-5w-76H" secondAttribute="bottom" id="aaH-nr-Q0t"/>
+                            <constraint firstItem="cv4-5w-76H" firstAttribute="leading" secondItem="Plp-Uz-S5o" secondAttribute="leading" id="eVq-bA-Bgb"/>
+>>>>>>> master
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Plp-Uz-S5o"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0T-PD-0XF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="2078" y="-883"/>
+=======
+            <point key="canvasLocation" x="-623.1884057971015" y="-514.28571428571422"/>
+>>>>>>> master
         </scene>
     </scenes>
     <resources>
         <image name="background" width="690" height="1226"/>
+<<<<<<< HEAD
         <image name="vk-blue" width="80" height="80"/>
+=======
+        <image name="samolet" width="150" height="150"/>
+>>>>>>> master
     </resources>
 </document>
