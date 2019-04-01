@@ -65,7 +65,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vk-blue" translatesAutoresizingMaskIntoConstraints="NO" id="mEu-Vp-ggs">
                                         <rect key="frame" x="167" y="80" width="80" height="80"/>
@@ -82,13 +82,15 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" red="0.27450980390000002" green="0.50196078430000002" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="a0q-E7-3JU" eventType="touchUpInside" id="Vbp-SV-tR9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Noq-XR-RcP" firstAttribute="width" secondItem="78A-2t-rQa" secondAttribute="width" id="2HJ-uZ-S4d"/>
                                     <constraint firstItem="LDX-fq-5RV" firstAttribute="centerX" secondItem="mEu-Vp-ggs" secondAttribute="centerX" id="2Py-QB-Yi4"/>
                                     <constraint firstItem="78A-2t-rQa" firstAttribute="top" secondItem="LDX-fq-5RV" secondAttribute="bottom" constant="20" id="670-qA-HgB"/>
-                                    <constraint firstItem="LDX-fq-5RV" firstAttribute="bottom" secondItem="mEu-Vp-ggs" secondAttribute="bottom" constant="49" id="73h-fS-U5F"/>
                                     <constraint firstItem="8ci-Sh-fw1" firstAttribute="top" secondItem="w7E-WI-L2o" secondAttribute="top" constant="20" id="8H5-5a-iZM"/>
                                     <constraint firstItem="D8X-nb-fjH" firstAttribute="top" secondItem="78A-2t-rQa" secondAttribute="bottom" constant="20" id="CMA-Ij-T3b"/>
                                     <constraint firstItem="aSH-o0-2F9" firstAttribute="width" secondItem="Noq-XR-RcP" secondAttribute="width" id="Dle-Dg-Nhk"/>
@@ -96,7 +98,6 @@
                                     <constraint firstItem="aSH-o0-2F9" firstAttribute="centerX" secondItem="w7E-WI-L2o" secondAttribute="centerX" id="JOk-7K-OE1"/>
                                     <constraint firstItem="mEu-Vp-ggs" firstAttribute="top" secondItem="8ci-Sh-fw1" secondAttribute="bottom" constant="20" id="OoQ-TE-Afz"/>
                                     <constraint firstItem="aSH-o0-2F9" firstAttribute="top" secondItem="Noq-XR-RcP" secondAttribute="bottom" constant="40" id="QzF-3g-yAw"/>
-                                    <constraint firstItem="mEu-Vp-ggs" firstAttribute="top" secondItem="8ci-Sh-fw1" secondAttribute="bottom" constant="20" id="TfE-a2-KmE"/>
                                     <constraint firstItem="D8X-nb-fjH" firstAttribute="width" secondItem="78A-2t-rQa" secondAttribute="width" id="TqC-mq-ugC"/>
                                     <constraint firstItem="Noq-XR-RcP" firstAttribute="top" secondItem="D8X-nb-fjH" secondAttribute="bottom" constant="20" id="Up1-Xh-iku"/>
                                     <constraint firstAttribute="bottom" secondItem="aSH-o0-2F9" secondAttribute="bottom" constant="20" id="WiS-QT-My0"/>
@@ -125,10 +126,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h1H-Ha-uDg"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordInput" destination="Noq-XR-RcP" id="ufP-oD-nNx"/>
+                        <outlet property="scrollView" destination="w7E-WI-L2o" id="khR-Li-XP6"/>
+                        <outlet property="usernameInput" destination="78A-2t-rQa" id="Wge-Fc-5n8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QuH-f4-0zR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="338" y="-326"/>
+            <point key="canvasLocation" x="183" y="-315"/>
         </scene>
     </scenes>
     <resources>
