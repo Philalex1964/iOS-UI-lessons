@@ -125,6 +125,11 @@
                             <constraint firstItem="xgG-Ta-vA0" firstAttribute="trailing" secondItem="hUd-Ea-QPE" secondAttribute="trailing" id="yRI-ag-dQ0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h1H-Ha-uDg"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8rB-lf-OJL"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="passwordInput" destination="Noq-XR-RcP" id="ufP-oD-nNx"/>
@@ -134,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QuH-f4-0zR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="-315"/>
+            <point key="canvasLocation" x="113" y="-175"/>
         </scene>
     </scenes>
     <resources>
