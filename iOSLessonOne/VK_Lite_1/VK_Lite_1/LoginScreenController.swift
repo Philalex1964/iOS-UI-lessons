@@ -46,12 +46,16 @@ class LoginScreenController: UIViewController {
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         if usernameInput.text == "",
-            passwordInput.text == "h" {
+            passwordInput.text == "" {
             print("Authorization successful")
         } else {
             print("Authorization failed")
 
         }
+        
+//        @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue){
+//            return
+//        }
         
     }
     
