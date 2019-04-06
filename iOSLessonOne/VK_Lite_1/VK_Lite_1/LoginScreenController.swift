@@ -15,8 +15,6 @@ class LoginScreenController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print(#function)
     }
     
     
@@ -30,8 +28,6 @@ class LoginScreenController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        print(#function)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -43,8 +39,6 @@ class LoginScreenController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        
-        print(#function)
     }
     
     /*override func viewWillLayoutSubviews() {
