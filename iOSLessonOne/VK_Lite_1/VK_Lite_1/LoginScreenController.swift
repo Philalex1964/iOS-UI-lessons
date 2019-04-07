@@ -15,11 +15,12 @@ class LoginScreenController: UIViewController {
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    //MARK: - Lifecycle
+    //MARK: - Lifecycle Contrllrs
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        scrollView.addGestureRecognizer(tapGR)
     }
     
     
@@ -33,9 +34,6 @@ class LoginScreenController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        let tapGR = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
-        scrollView.addGestureRecognizer(tapGR)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -49,17 +47,14 @@ class LoginScreenController: UIViewController {
         super.viewDidDisappear(animated)
     }
     
-    //MARK: -actions
+    //MARK: - Actions
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        
-        guard identifier == "Show Main Screen" else {return true}
-        
+
         if usernameInput.text == "",
             passwordInput.text == "" {
            performSegue(withIdentifier: "Show Main Screen", sender: sender)
         } else {
             showLoginError()
-            return false
         }
         
     }
@@ -68,7 +63,7 @@ class LoginScreenController: UIViewController {
 //      }
         
     
-    //MARK: - private
+    //MARK: - Private API
     @objc private func keyboardWasShown(notification: Notification) {
         let info = notification.userInfo as NSDictionary?
         let keyboardSize = (info?.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue).cgRectValue.size
@@ -104,10 +99,9 @@ class LoginScreenController: UIViewController {
     private func showLoginError() {
         let loginAlert = UIAlertController(title: "Error", message: "Login/password is incorrect", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Ok", style: .default)
-//        { _ in
-//            self.passwordInput.text = ""
-//        }
+        let action = UIAlertAction(title: "Ok", style: .default) { _ in
+            self.passwordInput.text = ""
+        }
         
         loginAlert.addAction(action)
         
