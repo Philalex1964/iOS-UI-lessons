@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="-617" y="-654"/>
         </scene>
-        <!--Table View Controller-->
+        <!--GroupsTV Controller-->
         <scene sceneID="FJa-hH-YcN">
             <objects>
-                <viewController id="U32-Pd-Uec" customClass="UITableViewController" sceneMemberID="viewController">
+                <viewController id="U32-Pd-Uec" customClass="GroupsTVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="scK-tX-4VA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,7 +163,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="KqS-gS-lAX" kind="presentation" id="phM-Pu-HZy"/>
+                                    <segue destination="KqS-gS-lAX" kind="show" identifier="GroupsOfGroups" id="phM-Pu-HZy"/>
                                 </connections>
                             </tableViewCell>
                         </subviews>
@@ -176,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="1844.9275362318842" y="-332.14285714285711"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Groups Of GroupsTV Controller-->
         <scene sceneID="iEG-W1-W9y">
             <objects>
-                <tableViewController id="KqS-gS-lAX" sceneMemberID="viewController">
+                <tableViewController id="KqS-gS-lAX" customClass="GroupsOfGroupsTVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yB7-4W-mkz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="2626" y="-332"/>
         </scene>
-        <!--Table View Controller-->
+        <!--FriendsTV Controller-->
         <scene sceneID="C9g-pf-96H">
             <objects>
-                <viewController id="cNa-BO-rfv" customClass="UITableViewController" sceneMemberID="viewController">
+                <viewController id="cNa-BO-rfv" customClass="FriendsTVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H4F-Rd-kO7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,7 +220,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="dyU-pR-Bim" kind="presentation" id="bpe-gY-Jxw"/>
+                                    <segue destination="dyU-pR-Bim" kind="show" identifier="Photos" id="bpe-gY-Jxw"/>
                                 </connections>
                             </tableViewCell>
                         </subviews>
@@ -231,12 +231,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTh-bT-HMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844.9275362318842" y="-980.35714285714278"/>
+            <point key="canvasLocation" x="1845" y="-980"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Photos Of FriendsCV Controller-->
         <scene sceneID="SWL-jt-UKm">
             <objects>
-                <collectionViewController id="dyU-pR-Bim" sceneMemberID="viewController">
+                <collectionViewController id="dyU-pR-Bim" customClass="PhotosOfFriendsCVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7J3-LU-bbX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
