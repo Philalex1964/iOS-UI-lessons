@@ -22,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w7E-WI-L2o">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="-197" y="44" width="808" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВКонтакте - Лайт" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ci-Sh-fw1">
-                                        <rect key="frame" x="73" y="20" width="268" height="40"/>
+                                        <rect key="frame" x="270" y="20" width="268" height="40"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
                                         <color key="textColor" red="0.27450980390000002" green="0.50196078430000002" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -33,7 +33,7 @@
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDX-fq-5RV">
-                                        <rect key="frame" x="103.5" y="180" width="207" height="29"/>
+                                        <rect key="frame" x="300.5" y="180" width="207" height="29"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
                                         <color key="textColor" red="0.27450980390000002" green="0.50196078430000002" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -41,7 +41,7 @@
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="78A-2t-rQa">
-                                        <rect key="frame" x="103.5" y="229" width="207" height="40"/>
+                                        <rect key="frame" x="300.5" y="229" width="207" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="PVK-pc-wHH"/>
                                         </constraints>
@@ -50,7 +50,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8X-nb-fjH">
-                                        <rect key="frame" x="103.5" y="289" width="207" height="29"/>
+                                        <rect key="frame" x="300.5" y="289" width="207" height="29"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
                                         <color key="textColor" red="0.27450980390000002" green="0.50196078430000002" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -58,7 +58,7 @@
                                         <size key="shadowOffset" width="0.0" height="1"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Noq-XR-RcP">
-                                        <rect key="frame" x="103.5" y="338" width="207" height="40"/>
+                                        <rect key="frame" x="300.5" y="338" width="207" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="sAP-3D-W1G"/>
                                             <constraint firstAttribute="width" constant="207" id="w8c-rd-cBs"/>
@@ -68,13 +68,13 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vk-blue" translatesAutoresizingMaskIntoConstraints="NO" id="mEu-Vp-ggs">
-                                        <rect key="frame" x="167" y="80" width="80" height="80"/>
+                                        <rect key="frame" x="364" y="80" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="mEu-Vp-ggs" secondAttribute="height" multiplier="1:1" id="fr2-TW-Vbu"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSH-o0-2F9">
-                                        <rect key="frame" x="103.5" y="418" width="207" height="51"/>
+                                        <rect key="frame" x="300.5" y="418" width="207" height="51"/>
                                         <color key="backgroundColor" red="0.27450980390000002" green="0.50196078430000002" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -82,6 +82,11 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" red="0.27450980390000002" green="0.50196078430000002" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="a0q-E7-3JU" eventType="touchUpInside" id="Vbp-SV-tR9"/>
                                         </connections>
@@ -95,17 +100,17 @@
                                     <constraint firstItem="D8X-nb-fjH" firstAttribute="top" secondItem="78A-2t-rQa" secondAttribute="bottom" constant="20" id="CMA-Ij-T3b"/>
                                     <constraint firstItem="aSH-o0-2F9" firstAttribute="width" secondItem="Noq-XR-RcP" secondAttribute="width" id="Dle-Dg-Nhk"/>
                                     <constraint firstItem="mEu-Vp-ggs" firstAttribute="centerX" secondItem="8ci-Sh-fw1" secondAttribute="centerX" id="G8U-BQ-eN8"/>
+                                    <constraint firstItem="78A-2t-rQa" firstAttribute="leading" secondItem="LDX-fq-5RV" secondAttribute="leading" id="GLg-P2-gAA"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ci-Sh-fw1" secondAttribute="trailing" priority="250" constant="270" id="H32-3P-B9d"/>
                                     <constraint firstItem="aSH-o0-2F9" firstAttribute="centerX" secondItem="w7E-WI-L2o" secondAttribute="centerX" id="JOk-7K-OE1"/>
                                     <constraint firstItem="mEu-Vp-ggs" firstAttribute="top" secondItem="8ci-Sh-fw1" secondAttribute="bottom" constant="20" id="OoQ-TE-Afz"/>
                                     <constraint firstItem="aSH-o0-2F9" firstAttribute="top" secondItem="Noq-XR-RcP" secondAttribute="bottom" constant="40" id="QzF-3g-yAw"/>
                                     <constraint firstItem="D8X-nb-fjH" firstAttribute="width" secondItem="78A-2t-rQa" secondAttribute="width" id="TqC-mq-ugC"/>
+                                    <constraint firstItem="8ci-Sh-fw1" firstAttribute="leading" secondItem="w7E-WI-L2o" secondAttribute="leading" priority="250" constant="270" id="UX8-9J-UVf"/>
                                     <constraint firstItem="Noq-XR-RcP" firstAttribute="top" secondItem="D8X-nb-fjH" secondAttribute="bottom" constant="20" id="Up1-Xh-iku"/>
                                     <constraint firstAttribute="bottom" secondItem="aSH-o0-2F9" secondAttribute="bottom" constant="20" id="WiS-QT-My0"/>
                                     <constraint firstItem="8ci-Sh-fw1" firstAttribute="centerX" secondItem="w7E-WI-L2o" secondAttribute="centerX" id="Xp9-SC-3jo"/>
-                                    <constraint firstItem="78A-2t-rQa" firstAttribute="leading" secondItem="LDX-fq-5RV" secondAttribute="leading" id="aCl-UP-59f"/>
                                     <constraint firstItem="D8X-nb-fjH" firstAttribute="centerX" secondItem="w7E-WI-L2o" secondAttribute="centerX" id="b5O-a9-3rL"/>
-                                    <constraint firstItem="LDX-fq-5RV" firstAttribute="centerX" secondItem="mEu-Vp-ggs" secondAttribute="centerX" id="bsb-oD-Siv"/>
-                                    <constraint firstAttribute="trailing" secondItem="78A-2t-rQa" secondAttribute="trailing" constant="103" id="sRO-Uh-yQd"/>
                                     <constraint firstItem="LDX-fq-5RV" firstAttribute="top" secondItem="mEu-Vp-ggs" secondAttribute="bottom" constant="20" id="w1g-iX-JuJ"/>
                                     <constraint firstItem="78A-2t-rQa" firstAttribute="width" secondItem="LDX-fq-5RV" secondAttribute="width" id="wGt-W6-xOU"/>
                                     <constraint firstItem="Noq-XR-RcP" firstAttribute="centerX" secondItem="w7E-WI-L2o" secondAttribute="centerX" id="xXK-Kj-mG0"/>
@@ -116,12 +121,11 @@
                         <constraints>
                             <constraint firstItem="LDX-fq-5RV" firstAttribute="width" secondItem="hUd-Ea-QPE" secondAttribute="width" multiplier="1:2" id="8rB-lf-OJL"/>
                             <constraint firstItem="xgG-Ta-vA0" firstAttribute="leading" secondItem="hUd-Ea-QPE" secondAttribute="leading" id="DHX-1t-R6T"/>
-                            <constraint firstItem="w7E-WI-L2o" firstAttribute="leading" secondItem="h1H-Ha-uDg" secondAttribute="leading" id="Fuc-RU-ndP"/>
-                            <constraint firstItem="h1H-Ha-uDg" firstAttribute="trailing" secondItem="w7E-WI-L2o" secondAttribute="trailing" id="Seq-fD-Sfe"/>
                             <constraint firstItem="h1H-Ha-uDg" firstAttribute="bottom" secondItem="w7E-WI-L2o" secondAttribute="bottom" id="Tpi-gL-iht"/>
                             <constraint firstItem="w7E-WI-L2o" firstAttribute="top" secondItem="h1H-Ha-uDg" secondAttribute="top" id="VSG-31-AFJ"/>
                             <constraint firstItem="xgG-Ta-vA0" firstAttribute="top" secondItem="hUd-Ea-QPE" secondAttribute="top" id="pmO-1v-36E"/>
                             <constraint firstItem="xgG-Ta-vA0" firstAttribute="bottom" secondItem="hUd-Ea-QPE" secondAttribute="bottom" id="wpf-VQ-n1X"/>
+                            <constraint firstItem="w7E-WI-L2o" firstAttribute="centerX" secondItem="h1H-Ha-uDg" secondAttribute="centerX" id="xVA-lY-zqq"/>
                             <constraint firstItem="xgG-Ta-vA0" firstAttribute="trailing" secondItem="hUd-Ea-QPE" secondAttribute="trailing" id="yRI-ag-dQ0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h1H-Ha-uDg"/>
@@ -139,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QuH-f4-0zR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="-175"/>
+            <point key="canvasLocation" x="-164" y="-270"/>
         </scene>
     </scenes>
     <resources>

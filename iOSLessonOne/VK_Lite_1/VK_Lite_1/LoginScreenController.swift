@@ -15,8 +15,9 @@ class LoginScreenController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print(#function)
+        
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        scrollView.addGestureRecognizer(tapGR)
     }
     
     
@@ -30,8 +31,6 @@ class LoginScreenController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        print(#function)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -43,26 +42,11 @@ class LoginScreenController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        
-        print(#function)
     }
-    
-    /*override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        print(#function)
-    }
-
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        
-        print(#function)
-    }*/
-
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        if usernameInput.text == "admin",
-            passwordInput.text == "123456" {
+        if usernameInput.text == "",
+            passwordInput.text == "h" {
             print("Authorization successful")
         } else {
             print("Authorization failed")
@@ -85,7 +69,10 @@ class LoginScreenController: UIViewController {
         
         scrollView.contentInset = contentInsets
         scrollView.scrollIndicatorInsets = contentInsets
-        
+    }
+    
+    @objc func hideKeyboard() {
+        scrollView.endEditing(true)
     }
     
 }
