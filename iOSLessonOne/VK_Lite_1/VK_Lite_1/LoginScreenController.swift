@@ -10,17 +10,16 @@ import UIKit
 
 class LoginScreenController: UIViewController {
     
-    //MARK: - outlets
+    //MARK: - Outlets
     @IBOutlet weak var usernameInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    //MARK: - lifecycle
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let tapGR = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
-        scrollView.addGestureRecognizer(tapGR)
+        
     }
     
     
@@ -34,6 +33,9 @@ class LoginScreenController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        scrollView.addGestureRecognizer(tapGR)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -49,7 +51,17 @@ class LoginScreenController: UIViewController {
     
     //MARK: -actions
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-
+        
+        guard identifier == "Show Main Screen" else {return true}
+        
+        if usernameInput.text == "",
+            passwordInput.text == "" {
+           performSegue(withIdentifier: "Show Main Screen", sender: sender)
+        } else {
+            showLoginError()
+            return false
+        }
+        
     }
 //      @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue){
 //            return
@@ -84,8 +96,22 @@ class LoginScreenController: UIViewController {
             passwordInput.text == "" {
                 return true
            } else {
+            showLoginError()
             return false
            }
+    }
+    
+    private func showLoginError() {
+        let loginAlert = UIAlertController(title: "Error", message: "Login/password is incorrect", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Ok", style: .default)
+//        { _ in
+//            self.passwordInput.text = ""
+//        }
+        
+        loginAlert.addAction(action)
+        
+        present(loginAlert, animated: true)
     }
     
 }

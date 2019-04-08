@@ -89,7 +89,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="a0q-E7-3JU" eventType="touchUpInside" id="Vbp-SV-tR9"/>
-                                            <segue destination="3du-9G-nwQ" kind="presentation" id="boK-8f-5Rp"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -141,13 +140,14 @@
                         <outlet property="passwordInput" destination="Noq-XR-RcP" id="ufP-oD-nNx"/>
                         <outlet property="scrollView" destination="w7E-WI-L2o" id="khR-Li-XP6"/>
                         <outlet property="usernameInput" destination="78A-2t-rQa" id="Wge-Fc-5n8"/>
+                        <segue destination="3du-9G-nwQ" kind="presentation" identifier="MainSegue" id="pWM-7r-USC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QuH-f4-0zR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-617" y="-654"/>
         </scene>
-        <!--GroupsTV Controller-->
+        <!--Groups-->
         <scene sceneID="FJa-hH-YcN">
             <objects>
                 <viewController id="U32-Pd-Uec" customClass="GroupsTVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -156,27 +156,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="122" translatesAutoresizingMaskIntoConstraints="NO" id="dJY-Cu-5H4">
-                                <rect key="frame" x="20" y="88" width="375" height="122"/>
+                                <rect key="frame" x="19" y="88" width="375" height="122"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dJY-Cu-5H4" id="oSM-a2-OBq">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="121.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="KqS-gS-lAX" kind="show" identifier="GroupsOfGroups" id="phM-Pu-HZy"/>
+                                    <segue destination="KqS-gS-lAX" kind="show" identifier="Groups of Groups" id="SRf-SU-3X4"/>
                                 </connections>
                             </tableViewCell>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DcC-NM-Fb8"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mKG-iB-0MX"/>
+                    <navigationItem key="navigationItem" title="Groups" id="Q79-UO-c0i">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="bx2-8u-sXW"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Obd-nn-a2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1844.9275362318842" y="-332.14285714285711"/>
         </scene>
-        <!--Groups Of GroupsTV Controller-->
+        <!--Groups of Groups-->
         <scene sceneID="iEG-W1-W9y">
             <objects>
                 <tableViewController id="KqS-gS-lAX" customClass="GroupsOfGroupsTVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -199,12 +201,15 @@
                             <outlet property="delegate" destination="KqS-gS-lAX" id="Urt-h1-y4L"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Groups of Groups" id="3cf-6X-nco">
+                        <barButtonItem key="backBarButtonItem" title="Groups" id="cTC-fx-8HF"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMj-yM-B1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2626" y="-332"/>
         </scene>
-        <!--FriendsTV Controller-->
+        <!--Friends-->
         <scene sceneID="C9g-pf-96H">
             <objects>
                 <viewController id="cNa-BO-rfv" customClass="FriendsTVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -227,13 +232,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tch-vu-K1c"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4r8-5o-VZT"/>
+                    <navigationItem key="navigationItem" title="Friends" id="YY9-cJ-VbN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTh-bT-HMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1845" y="-980"/>
         </scene>
-        <!--Photos Of FriendsCV Controller-->
+        <!--Photos-->
         <scene sceneID="SWL-jt-UKm">
             <objects>
                 <collectionViewController id="dyU-pR-Bim" customClass="PhotosOfFriendsCVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -262,15 +267,16 @@
                             <outlet property="delegate" destination="dyU-pR-Bim" id="tIn-gU-A32"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Photos" id="7P4-Ul-LYH"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWU-TR-hdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2587" y="-980"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tabbar Controller-->
         <scene sceneID="iT7-8A-khc">
             <objects>
-                <tabBarController id="3du-9G-nwQ" sceneMemberID="viewController">
+                <tabBarController id="3du-9G-nwQ" customClass="MainTabbarController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZTM-Cc-8aO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -283,7 +289,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BlW-aG-NTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="-657"/>
+            <point key="canvasLocation" x="130" y="-654"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="D63-wn-ypX">
