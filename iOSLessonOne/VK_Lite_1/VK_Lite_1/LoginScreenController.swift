@@ -9,10 +9,13 @@
 import UIKit
 
 class LoginScreenController: UIViewController {
+    
+    //MARK: - outlets
     @IBOutlet weak var usernameInput: UITextField!
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    //MARK: - lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,18 +47,17 @@ class LoginScreenController: UIViewController {
         super.viewDidDisappear(animated)
     }
     
+    //MARK: -actions
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        if usernameInput.text == "",
-            passwordInput.text == "h" {
-            print("Authorization successful")
-        } else {
-            print("Authorization failed")
 
-        }
-        
     }
+//      @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue){
+//            return
+//      }
+        
     
-    @objc func keyboardWasShown(notification: Notification) {
+    //MARK: - private
+    @objc private func keyboardWasShown(notification: Notification) {
         let info = notification.userInfo as NSDictionary?
         let keyboardSize = (info?.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue).cgRectValue.size
         let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
@@ -64,15 +66,26 @@ class LoginScreenController: UIViewController {
         scrollView.scrollIndicatorInsets = contentInsets
     }
     
-    @objc func keyboardWasHidden(notification: Notification) {
+    @objc private func keyboardWasHidden(notification: Notification) {
         let contentInsets = UIEdgeInsets.zero
         
         scrollView.contentInset = contentInsets
         scrollView.scrollIndicatorInsets = contentInsets
     }
     
-    @objc func hideKeyboard() {
+    @objc private func hideKeyboard() {
         scrollView.endEditing(true)
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        guard identifier == "Show Main Screen" else {return true}
+        
+        if usernameInput.text == "",
+            passwordInput.text == "" {
+                return true
+           } else {
+            return false
+           }
     }
     
 }
