@@ -165,7 +165,7 @@
             </objects>
             <point key="canvasLocation" x="308" y="-656"/>
         </scene>
-        <!--Groups-->
+        <!--My Groups-->
         <scene sceneID="4zv-fs-kig">
             <objects>
                 <tableViewController id="VCf-Px-wmp" customClass="GroupsTVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -188,7 +188,7 @@
                             <outlet property="delegate" destination="VCf-Px-wmp" id="sR1-y9-gHV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Groups" id="HY8-3G-CZ8">
+                    <navigationItem key="navigationItem" title="My Groups" id="HY8-3G-CZ8">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="VK7-6J-kry"/>
                         <barButtonItem key="rightBarButtonItem" title="Groups" id="Uay-6B-0Jj">
                             <connections>
@@ -229,7 +229,7 @@
             </objects>
             <point key="canvasLocation" x="3086.9565217391305" y="-281.25"/>
         </scene>
-        <!--Friends-->
+        <!--My Friends-->
         <scene sceneID="nq5-6a-lLk">
             <objects>
                 <tableViewController id="57Z-oH-De7" customClass="FriendsTVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -252,7 +252,7 @@
                             <outlet property="delegate" destination="57Z-oH-De7" id="KZS-ec-cuZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Friends" id="NvA-SU-RJa">
+                    <navigationItem key="navigationItem" title="My Friends" id="NvA-SU-RJa">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="gs7-2J-08G"/>
                         <barButtonItem key="rightBarButtonItem" title="Photo" id="gX5-1G-Zxk">
                             <connections>
@@ -299,11 +299,11 @@
             </objects>
             <point key="canvasLocation" x="3086.9565217391305" y="-989.0625"/>
         </scene>
-        <!--Friends-->
+        <!--My Friends-->
         <scene sceneID="av4-Hf-oEU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GQ3-R9-1Sh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friends" id="hiQ-TQ-2P4"/>
+                    <tabBarItem key="tabBarItem" title="My Friends" id="hiQ-TQ-2P4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eZZ-8a-kQL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -318,11 +318,11 @@
             </objects>
             <point key="canvasLocation" x="1273.913043478261" y="-989.0625"/>
         </scene>
-        <!--Groups-->
+        <!--My Groups-->
         <scene sceneID="pzc-qe-ByB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xbW-9g-YgQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Groups" id="Vif-lZ-smz"/>
+                    <tabBarItem key="tabBarItem" title="My Groups" id="Vif-lZ-smz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6jj-US-0CP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
