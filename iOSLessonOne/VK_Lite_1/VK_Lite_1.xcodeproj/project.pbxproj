@@ -10,6 +10,7 @@
 		2C5CDDAE225CDDCA00B29267 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CDDAD225CDDC900B29267 /* FriendCell.swift */; };
 		2C5CDDB0225CEBBA00B29267 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CDDAF225CEBBA00B29267 /* GroupCell.swift */; };
 		2C5CDDB3225CF83D00B29267 /* RecommendedGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CDDB2225CF83D00B29267 /* RecommendedGroupsController.swift */; };
+		2C5CDDB5225D2FA600B29267 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CDDB4225D2FA600B29267 /* PhotoCell.swift */; };
 		2C6429F222597CE300285078 /* FriendsTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6429F122597CE300285078 /* FriendsTVController.swift */; };
 		2C6429F422597D0E00285078 /* GroupsTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6429F322597D0D00285078 /* GroupsTVController.swift */; };
 		2C6429F822597D7C00285078 /* PhotosOfFriendsCVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6429F722597D7C00285078 /* PhotosOfFriendsCVController.swift */; };
@@ -25,6 +26,7 @@
 		2C5CDDAD225CDDC900B29267 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		2C5CDDAF225CEBBA00B29267 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		2C5CDDB2225CF83D00B29267 /* RecommendedGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGroupsController.swift; sourceTree = "<group>"; };
+		2C5CDDB4225D2FA600B29267 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		2C6429F122597CE300285078 /* FriendsTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTVController.swift; sourceTree = "<group>"; };
 		2C6429F322597D0D00285078 /* GroupsTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTVController.swift; sourceTree = "<group>"; };
 		2C6429F722597D7C00285078 /* PhotosOfFriendsCVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosOfFriendsCVController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		2CA50201225BBEF100D7CA52 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2C5CDDB4225D2FA600B29267 /* PhotoCell.swift */,
 				2C6519A12251542000D65F77 /* LoginScreenController.swift */,
 				2C6429F92259F15C00285078 /* MainTabbarController.swift */,
 				2C5CDDB1225CEBC300B29267 /* Cells */,
@@ -186,6 +189,7 @@
 				2C65198E22514BFB00D65F77 /* AppDelegate.swift in Sources */,
 				2C6429F422597D0E00285078 /* GroupsTVController.swift in Sources */,
 				2C5CDDAE225CDDCA00B29267 /* FriendCell.swift in Sources */,
+				2C5CDDB5225D2FA600B29267 /* PhotoCell.swift in Sources */,
 				2C6519A22251542000D65F77 /* LoginScreenController.swift in Sources */,
 				2C6429F222597CE300285078 /* FriendsTVController.swift in Sources */,
 				2C6429FA2259F15C00285078 /* MainTabbarController.swift in Sources */,
