@@ -238,13 +238,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="WPF-MQ-DnK">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="169" id="WPF-MQ-DnK" customClass="FriendCell" customModule="VK_Lite_1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="169"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WPF-MQ-DnK" id="ZM5-J8-0ya">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="168.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpy-ZH-olv">
+                                            <rect key="frame" x="36" y="71.5" width="342" height="26"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gpy-ZH-olv" secondAttribute="trailing" constant="16" id="3QL-FB-fGg"/>
+                                        <constraint firstItem="gpy-ZH-olv" firstAttribute="leading" secondItem="ZM5-J8-0ya" secondAttribute="leadingMargin" constant="16" id="UVH-c9-3p9"/>
+                                        <constraint firstItem="gpy-ZH-olv" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="fFF-wP-gyT"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="friendnameLabel" destination="gpy-ZH-olv" id="K7f-ig-v73"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
