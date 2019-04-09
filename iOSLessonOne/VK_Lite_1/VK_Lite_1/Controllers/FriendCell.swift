@@ -10,6 +10,8 @@ import UIKit
 
 class FriendCell: UITableViewCell {
 
+    static let reuseId = "FriendCell"
+    
     @IBOutlet weak var friendnameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
