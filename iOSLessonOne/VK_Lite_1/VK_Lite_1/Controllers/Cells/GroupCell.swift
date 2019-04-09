@@ -1,5 +1,5 @@
 //
-//  FriendCell.swift
+//  GroupCell.swift
 //  VK_Lite_1
 //
 //  Created by Александр Филиппов on 09.04.2019.
@@ -8,13 +8,16 @@
 
 import UIKit
 
-class FriendCell: UITableViewCell {
+class GroupCell: UITableViewCell {
 
-    static let reuseId = "FriendCell"
+    static let reuseId = "GroupCell"
     
-    @IBOutlet weak var friendnameLabel: UILabel!
+    @IBOutlet weak var groupnameLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 }

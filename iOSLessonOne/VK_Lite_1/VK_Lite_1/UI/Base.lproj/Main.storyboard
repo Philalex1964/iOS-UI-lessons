@@ -174,13 +174,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YA7-q2-Rrv">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="168" id="YA7-q2-Rrv" customClass="GroupCell" customModule="VK_Lite_1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="168"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YA7-q2-Rrv" id="pGu-AG-Sn8">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YA7-q2-Rrv" id="pGu-AG-Sn8" customClass="GroupCell" customModule="VK_Lite_1" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="167.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alk-e8-rK2">
+                                            <rect key="frame" x="36" y="72" width="342" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="alk-e8-rK2" firstAttribute="leading" secondItem="pGu-AG-Sn8" secondAttribute="leadingMargin" constant="16" id="4Cn-9d-y2Z"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="alk-e8-rK2" secondAttribute="trailing" constant="16" id="WXG-kM-Mq9"/>
+                                        <constraint firstItem="alk-e8-rK2" firstAttribute="centerY" secondItem="pGu-AG-Sn8" secondAttribute="centerY" id="X6s-LI-CCa"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="groupnameLabel" destination="alk-e8-rK2" id="cAs-2B-bQF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
