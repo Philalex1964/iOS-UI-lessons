@@ -340,15 +340,15 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell1" id="bV6-bL-r6J" customClass="PhotoCell" customModule="VK_Lite_1" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="bV6-bL-r6J" userLabel="PhotoCell" customClass="PhotoCell" customModule="VK_Lite_1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="dpv-g9-cQu">
-                                            <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="dpv-g9-cQu">
+                                            <rect key="frame" x="0.0" y="0.0" width="139" height="151"/>
                                         </imageView>
                                     </subviews>
                                 </view>
@@ -360,94 +360,6 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="photoImageView" destination="dpv-g9-cQu" id="XkS-gM-RIp"/>
-                                </connections>
-                            </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell2" id="1vD-V4-5FA" customClass="PhotoCell" customModule="VK_Lite_1" customModuleProvider="target">
-                                <rect key="frame" x="255" y="0.0" width="159" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Anton" translatesAutoresizingMaskIntoConstraints="NO" id="6SE-gv-h2J">
-                                            <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
-                                        </imageView>
-                                    </subviews>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="6SE-gv-h2J" secondAttribute="trailing" id="2OC-ok-fo1"/>
-                                    <constraint firstItem="6SE-gv-h2J" firstAttribute="leading" secondItem="1vD-V4-5FA" secondAttribute="leading" id="Edr-Bg-3cn"/>
-                                    <constraint firstItem="6SE-gv-h2J" firstAttribute="top" secondItem="1vD-V4-5FA" secondAttribute="top" id="Fb8-MT-j2G"/>
-                                    <constraint firstAttribute="bottom" secondItem="6SE-gv-h2J" secondAttribute="bottom" id="e1c-za-T5Q"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="photoImageView" destination="6SE-gv-h2J" id="PAv-A1-N9F"/>
-                                </connections>
-                            </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell3" id="xS3-hl-w8N" customClass="PhotoCell" customModule="VK_Lite_1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="181" width="159" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dmitry" translatesAutoresizingMaskIntoConstraints="NO" id="lDd-9K-Bis">
-                                            <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
-                                        </imageView>
-                                    </subviews>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="lDd-9K-Bis" secondAttribute="bottom" id="Bzh-DX-R2d"/>
-                                    <constraint firstItem="lDd-9K-Bis" firstAttribute="leading" secondItem="xS3-hl-w8N" secondAttribute="leading" id="JAU-zA-Rgf"/>
-                                    <constraint firstItem="lDd-9K-Bis" firstAttribute="top" secondItem="xS3-hl-w8N" secondAttribute="top" id="Nn4-1N-mG1"/>
-                                    <constraint firstAttribute="trailing" secondItem="lDd-9K-Bis" secondAttribute="trailing" id="bhy-aM-8wL"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="photoImageView" destination="lDd-9K-Bis" id="h6d-ma-uKC"/>
-                                </connections>
-                            </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell4" id="HbL-3K-Srg" customClass="PhotoCell" customModule="VK_Lite_1" customModuleProvider="target">
-                                <rect key="frame" x="255" y="181" width="159" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Igor" translatesAutoresizingMaskIntoConstraints="NO" id="CIN-Er-wJc">
-                                            <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
-                                        </imageView>
-                                    </subviews>
-                                </view>
-                                <constraints>
-                                    <constraint firstItem="CIN-Er-wJc" firstAttribute="top" secondItem="HbL-3K-Srg" secondAttribute="top" id="Xws-XL-gcu"/>
-                                    <constraint firstItem="CIN-Er-wJc" firstAttribute="leading" secondItem="HbL-3K-Srg" secondAttribute="leading" id="g6f-cI-oFs"/>
-                                    <constraint firstAttribute="bottom" secondItem="CIN-Er-wJc" secondAttribute="bottom" id="grW-WX-vml"/>
-                                    <constraint firstAttribute="trailing" secondItem="CIN-Er-wJc" secondAttribute="trailing" id="hUN-5G-UYx"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="photoImageView" destination="CIN-Er-wJc" id="3WG-bP-I9h"/>
-                                </connections>
-                            </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell5" id="Q4e-tL-2HK" customClass="PhotoCell" customModule="VK_Lite_1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="362" width="159" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Uliana" translatesAutoresizingMaskIntoConstraints="NO" id="f9k-ll-OF2">
-                                            <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
-                                        </imageView>
-                                    </subviews>
-                                </view>
-                                <constraints>
-                                    <constraint firstItem="f9k-ll-OF2" firstAttribute="leading" secondItem="Q4e-tL-2HK" secondAttribute="leading" id="HgC-Pp-ukO"/>
-                                    <constraint firstAttribute="trailing" secondItem="f9k-ll-OF2" secondAttribute="trailing" id="Hl2-AM-ywe"/>
-                                    <constraint firstItem="f9k-ll-OF2" firstAttribute="top" secondItem="Q4e-tL-2HK" secondAttribute="top" id="Vh7-qD-UMU"/>
-                                    <constraint firstAttribute="bottom" secondItem="f9k-ll-OF2" secondAttribute="bottom" id="nkx-fG-o2o"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="photoImageView" destination="f9k-ll-OF2" id="3PP-9O-wQj"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -502,10 +414,6 @@
     </scenes>
     <resources>
         <image name="Alexey" width="640" height="640"/>
-        <image name="Anton" width="640" height="640"/>
-        <image name="Dmitry" width="640" height="640"/>
-        <image name="Igor" width="640" height="640"/>
-        <image name="Uliana" width="640" height="640"/>
         <image name="background-1" width="690" height="1226"/>
         <image name="vk-blue" width="80" height="80"/>
     </resources>

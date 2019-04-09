@@ -10,7 +10,7 @@ import UIKit
 
 class PhotoCell: UICollectionViewCell {
     
-    static let reuseID = "PhotoCell"
+    static let reuseId = "PhotoCell"
     
     @IBOutlet var photoImageView: UIImageView!
     

@@ -56,6 +56,7 @@
 			children = (
 				2C5CDDAF225CEBBA00B29267 /* GroupCell.swift */,
 				2C5CDDAD225CDDC900B29267 /* FriendCell.swift */,
+				2C5CDDB4225D2FA600B29267 /* PhotoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -100,10 +101,9 @@
 		2CA50201225BBEF100D7CA52 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2C5CDDB4225D2FA600B29267 /* PhotoCell.swift */,
+				2C5CDDB1225CEBC300B29267 /* Cells */,
 				2C6519A12251542000D65F77 /* LoginScreenController.swift */,
 				2C6429F92259F15C00285078 /* MainTabbarController.swift */,
-				2C5CDDB1225CEBC300B29267 /* Cells */,
 				2C6429F122597CE300285078 /* FriendsTVController.swift */,
 				2C6429F322597D0D00285078 /* GroupsTVController.swift */,
 				2C5CDDB2225CF83D00B29267 /* RecommendedGroupsController.swift */,
