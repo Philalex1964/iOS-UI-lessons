@@ -229,13 +229,29 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" id="NI0-Qn-c5X" customClass="GroupCell" customModule="VK_Lite_1" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="168" id="NI0-Qn-c5X" customClass="GroupCell" customModule="VK_Lite_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="168"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NI0-Qn-c5X" id="mHb-Hj-BFq">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NI0-Qn-c5X" id="mHb-Hj-BFq" customClass="GroupCell" customModule="VK_Lite_1" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="167.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Had-Si-S1J">
+                                                    <rect key="frame" x="36" y="71" width="342" height="25.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Had-Si-S1J" secondAttribute="trailing" constant="16" id="So0-Iu-ziA"/>
+                                                <constraint firstItem="Had-Si-S1J" firstAttribute="leading" secondItem="mHb-Hj-BFq" secondAttribute="leadingMargin" constant="16" id="Uqo-eI-kdf"/>
+                                                <constraint firstItem="Had-Si-S1J" firstAttribute="centerY" secondItem="mHb-Hj-BFq" secondAttribute="centerY" id="iMY-FJ-qWa"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="groupnameLabel" destination="Had-Si-S1J" id="fhR-45-e2A"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -250,12 +266,12 @@
                         <viewLayoutGuide key="safeArea" id="JAa-Vl-KsX"/>
                     </view>
                     <connections>
-                        <outlet property="view" destination="36N-VS-81e" id="4vf-n3-Xnh"/>
+                        <outlet property="tableView" destination="36N-VS-81e" id="Qgo-4G-v4F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYq-Z3-JSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3084" y="-284"/>
+            <point key="canvasLocation" x="3082.608695652174" y="-284.59821428571428"/>
         </scene>
         <!--My Friends-->
         <scene sceneID="nq5-6a-lLk">

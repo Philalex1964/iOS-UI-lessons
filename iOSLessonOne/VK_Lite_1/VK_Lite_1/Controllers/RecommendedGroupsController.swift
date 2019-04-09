@@ -10,21 +10,32 @@ import UIKit
 
 class RecommendedGroupsController: UIViewController {
 
+    @IBOutlet var tableView: UITableView! {
+        didSet {
+            tableView.dataSource = self
+            //tableView.delegate = self
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+    }
+}
+
+extension RecommendedGroupsController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupCell.reuseId, for: indexPath) as? GroupCell else { fatalError("Cell cannot be dequeued")}
+        
+        cell.groupnameLabel.text = "EA NBA"
+        
+        return cell        
     }
-    */
-
+    
+    
 }
