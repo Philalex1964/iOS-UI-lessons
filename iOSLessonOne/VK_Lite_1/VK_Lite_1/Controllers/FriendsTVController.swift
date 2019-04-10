@@ -11,11 +11,11 @@ import UIKit
 class FriendsTVController: UITableViewController {
 
     private var friends: [Friend] = [
-        Friend(friendName: "Alexey", friendGender: .male, groupMemberNumber: 1, imageName: "Alexey"),
-        Friend(friendName: "Anton", friendGender: .male, groupMemberNumber: 2, imageName: "Anton"),
-        Friend(friendName: "Dmitry", friendGender: .male, groupMemberNumber: 3, imageName: "Dmitry"),
-        Friend(friendName: "Igor", friendGender: .male, groupMemberNumber: 4, imageName: "Igor"),
-        Friend(friendName: "Uliana", friendGender: .female, groupMemberNumber: 5, imageName: "Uliana")
+        Friend(friendName: "Alexey", friendGender: .male, groupMemberNumber: 1, friendImageName: "Alexey"),
+        Friend(friendName: "Anton", friendGender: .male, groupMemberNumber: 2, friendImageName: "Anton"),
+        Friend(friendName: "Dmitry", friendGender: .male, groupMemberNumber: 3, friendImageName: "Dmitry"),
+        Friend(friendName: "Igor", friendGender: .male, groupMemberNumber: 4, friendImageName: "Igor"),
+        Friend(friendName: "Uliana", friendGender: .female, groupMemberNumber: 5, friendImageName: "Uliana")
     ]
     
     override func viewDidLoad() {
@@ -33,7 +33,8 @@ class FriendsTVController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendCell.reuseId, for: indexPath) as? FriendCell else { fatalError("Cell cannot be dequeued")}
 
         cell.friendnameLabel.text = friends[indexPath.row].friendName
-        
+        //cell.friendphotoLabel.image = friends[indexPath.row].friendimageName
+        cell.friendphotoImage.image = UIImage(named: friends[indexPath.row].friendImageName)
         return cell
     }
  

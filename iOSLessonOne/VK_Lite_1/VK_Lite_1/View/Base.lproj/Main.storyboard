@@ -295,15 +295,26 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-xP-M4J" userLabel="FriendphotoImage">
+                                            <rect key="frame" x="282" y="20.5" width="128" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="ueW-xP-M4J" secondAttribute="height" multiplier="1:1" id="1Vf-9e-kVI"/>
+                                                <constraint firstAttribute="height" constant="128" id="fAx-0e-Xf7"/>
+                                                <constraint firstAttribute="width" constant="128" id="q9C-uk-lDs"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="gpy-ZH-olv" secondAttribute="trailing" constant="16" id="3QL-FB-fGg"/>
+                                        <constraint firstItem="ueW-xP-M4J" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="CXJ-hh-HbN"/>
                                         <constraint firstItem="gpy-ZH-olv" firstAttribute="leading" secondItem="ZM5-J8-0ya" secondAttribute="leadingMargin" constant="16" id="UVH-c9-3p9"/>
                                         <constraint firstItem="gpy-ZH-olv" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="fFF-wP-gyT"/>
+                                        <constraint firstItem="ueW-xP-M4J" firstAttribute="trailing" secondItem="ZM5-J8-0ya" secondAttribute="trailingMargin" constant="16" id="mMo-Xf-njc"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="friendnameLabel" destination="gpy-ZH-olv" id="K7f-ig-v73"/>
+                                    <outlet property="friendphotoImage" destination="ueW-xP-M4J" id="VEh-iZ-yhK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
