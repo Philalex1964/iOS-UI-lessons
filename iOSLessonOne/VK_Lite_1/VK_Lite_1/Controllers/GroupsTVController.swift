@@ -12,7 +12,7 @@ class GroupsTVController: UITableViewController {
 
     private var groups = [
         Group(groupName: "MLB", groupTopic: "Baseball", groupNumber: 1, groupImageName: "MLB"),
-        Group(groupName: "Super Bowl", groupTopic: "American Football", groupNumber: 2, groupImageName: "MLB"),
+        Group(groupName: "Super Bowl", groupTopic: "American Football", groupNumber: 2, groupImageName: "Super Bowl"),
         Group(groupName: "FIDE", groupTopic: "Chess", groupNumber: 3, groupImageName: "FIDE"),
         Group(groupName: "IBU", groupTopic: "Biathlon", groupNumber: 4, groupImageName: "IBU"),
         Group(groupName: "Big Lapot", groupTopic: "Lapta", groupNumber: 5, groupImageName: "Big Lapot")

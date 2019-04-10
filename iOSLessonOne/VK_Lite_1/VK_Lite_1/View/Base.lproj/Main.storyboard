@@ -207,6 +207,7 @@
                                 <connections>
                                     <outlet property="groupImage" destination="Lo9-ez-blM" id="6fz-rd-MSO"/>
                                     <outlet property="groupnameLabel" destination="7bj-kP-zwt" id="872-sT-WWf"/>
+                                    <segue destination="DFv-4c-BV5" kind="show" identifier="Show Photo" id="xeh-dX-Nnb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -217,11 +218,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="My Groups" id="HY8-3G-CZ8">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="VK7-6J-kry"/>
-                        <barButtonItem key="rightBarButtonItem" title="Groups" id="Uay-6B-0Jj">
-                            <connections>
-                                <segue destination="DFv-4c-BV5" kind="show" id="tE3-6e-iIa"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Groups" id="Uay-6B-0Jj"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPg-50-sjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
