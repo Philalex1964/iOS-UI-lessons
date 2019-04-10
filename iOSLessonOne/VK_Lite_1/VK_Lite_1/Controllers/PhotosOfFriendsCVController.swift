@@ -10,8 +10,12 @@ import UIKit
 
 class PhotosOfFriendsCVController: UICollectionViewController {
 
+    public var friendName = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = friendName
     }
 
     

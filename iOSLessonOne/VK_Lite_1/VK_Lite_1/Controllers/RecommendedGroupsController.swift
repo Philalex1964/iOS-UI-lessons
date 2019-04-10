@@ -9,7 +9,9 @@
 import UIKit
 
 class RecommendedGroupsController: UIViewController {
-
+    
+    public var groupname = ""
+    
     private let groups: [Group] = [
         Group(groupName: "EA FIFA", groupTopic: "Football", groupNumber: 1),
         Group(groupName: "EA NBA", groupTopic: "Basketball", groupNumber: 2),
@@ -22,6 +24,8 @@ class RecommendedGroupsController: UIViewController {
         didSet {
             tableView.dataSource = self
             //tableView.delegate = self
+            
+            title = groupname
         }
     }
     

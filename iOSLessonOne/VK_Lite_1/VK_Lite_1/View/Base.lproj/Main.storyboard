@@ -316,7 +316,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" id="gs7-2J-08G"/>
                         <barButtonItem key="rightBarButtonItem" title="Photo" id="gX5-1G-Zxk">
                             <connections>
-                                <segue destination="FpE-P5-6uc" kind="show" id="UYt-O5-8md"/>
+                                <segue destination="FpE-P5-6uc" kind="show" identifier="Show Photo" id="UYt-O5-8md"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
