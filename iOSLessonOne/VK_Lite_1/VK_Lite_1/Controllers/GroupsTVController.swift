@@ -10,7 +10,7 @@ import UIKit
 
 class GroupsTVController: UITableViewController {
 
-    private var groups = [
+    public var groups = [
         Group(groupName: "MLB", groupTopic: "Baseball", groupNumber: 1, groupImageName: "MLB"),
         Group(groupName: "Super Bowl", groupTopic: "American Football", groupNumber: 2, groupImageName: "Super Bowl"),
         Group(groupName: "FIDE", groupTopic: "Chess", groupNumber: 3, groupImageName: "FIDE"),
@@ -82,6 +82,13 @@ class GroupsTVController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-  
-
+    
+    @IBAction func addGroup(segue: UIStoryboardSegue) {
+        if let recommendedGroupsController = segue.source as? RecommendedGroupsController,
+            let indexPath = recommendedGroupsController.tableView.indexPathForSelectedRow {
+                    let group = recommendedGroupsController.groups[indexPath.row]
+                    self.groups.append(group)
+                    tableView.reloadData()
+        }
+    }
 }

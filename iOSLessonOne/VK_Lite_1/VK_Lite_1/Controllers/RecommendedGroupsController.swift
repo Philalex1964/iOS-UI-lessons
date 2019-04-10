@@ -12,7 +12,7 @@ class RecommendedGroupsController: UIViewController {
     
     public var groupName = ""
     
-    private let groups: [Group] = [
+    public let groups: [Group] = [
         Group(groupName: "FIFA", groupTopic: "Football", groupNumber: 1, groupImageName: "FIFA" ),
         Group(groupName: "NBA", groupTopic: "Basketball", groupNumber: 2, groupImageName: "NBA"),
         Group(groupName: "NHL", groupTopic: "Hockey", groupNumber: 3, groupImageName: "NHL"),

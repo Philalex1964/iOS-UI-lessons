@@ -207,7 +207,6 @@
                                 <connections>
                                     <outlet property="groupImage" destination="Lo9-ez-blM" id="6fz-rd-MSO"/>
                                     <outlet property="groupnameLabel" destination="7bj-kP-zwt" id="872-sT-WWf"/>
-                                    <segue destination="DFv-4c-BV5" kind="show" identifier="Show Photo" id="xeh-dX-Nnb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -218,7 +217,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="My Groups" id="HY8-3G-CZ8">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="VK7-6J-kry"/>
-                        <barButtonItem key="rightBarButtonItem" title="Groups" id="Uay-6B-0Jj"/>
+                        <barButtonItem key="rightBarButtonItem" title="Groups" id="Uay-6B-0Jj">
+                            <connections>
+                                <segue destination="DFv-4c-BV5" kind="show" identifier="Show Recomende Groups" id="YZe-mq-TIy"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPg-50-sjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -270,6 +273,7 @@
                                         <connections>
                                             <outlet property="groupImage" destination="TLK-Ar-BhW" id="Ryk-Rl-qVa"/>
                                             <outlet property="groupnameLabel" destination="UxK-fL-LCI" id="AQI-N2-7XV"/>
+                                            <segue destination="zbr-72-fTR" kind="unwind" unwindAction="addGroupWithSegue:" id="I60-lY-T3V"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -289,6 +293,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYq-Z3-JSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zbr-72-fTR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3082.608695652174" y="-284.59821428571428"/>
         </scene>
