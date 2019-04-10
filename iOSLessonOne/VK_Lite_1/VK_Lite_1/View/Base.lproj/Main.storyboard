@@ -334,6 +334,7 @@
                                 <connections>
                                     <outlet property="friendnameLabel" destination="gpy-ZH-olv" id="K7f-ig-v73"/>
                                     <outlet property="friendphotoImage" destination="ueW-xP-M4J" id="VEh-iZ-yhK"/>
+                                    <segue destination="FpE-P5-6uc" kind="show" identifier="Show Photo" id="x8Y-tC-dm2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -344,11 +345,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="My Friends" id="NvA-SU-RJa">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="gs7-2J-08G"/>
-                        <barButtonItem key="rightBarButtonItem" title="Photo" id="gX5-1G-Zxk">
-                            <connections>
-                                <segue destination="FpE-P5-6uc" kind="show" identifier="Show Photo" id="UYt-O5-8md"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Photo" id="gX5-1G-Zxk"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTz-RN-z4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
