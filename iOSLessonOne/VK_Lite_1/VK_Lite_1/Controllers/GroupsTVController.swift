@@ -86,8 +86,12 @@ class GroupsTVController: UITableViewController {
     @IBAction func addGroup(segue: UIStoryboardSegue) {
         if let recommendedGroupsController = segue.source as? RecommendedGroupsController,
             let indexPath = recommendedGroupsController.tableView.indexPathForSelectedRow {
-                    let group = recommendedGroupsController.groups[indexPath.row]
-                    self.groups.append(group)
+                    let newGroup = recommendedGroupsController.groups[indexPath.row]
+            
+                    guard !groups.contains(where: { group -> Bool in
+                        return group.groupName == newGroup.groupName
+                    }) else { return }
+                    self.groups.append(newGroup)
                     tableView.reloadData()
         }
     }
