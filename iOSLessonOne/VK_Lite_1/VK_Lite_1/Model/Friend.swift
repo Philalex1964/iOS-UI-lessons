@@ -8,9 +8,13 @@
 
 import Foundation
 
+enum Gender {
+    case male, female
+}
+
 struct Friend {
     let friendName: String
-    let friendGender: String
+    let friendGender: Gender
     var groupMemberNumber: Int
 }
 

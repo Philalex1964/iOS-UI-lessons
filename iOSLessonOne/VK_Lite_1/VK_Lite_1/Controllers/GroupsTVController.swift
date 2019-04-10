@@ -10,7 +10,13 @@ import UIKit
 
 class GroupsTVController: UITableViewController {
 
-    private var 
+    private var groups = [
+        Group(groupName: "MLB", groupTopic: "Baseball", groupNumber: 1),
+        Group(groupName: "NFL", groupTopic: "American Football", groupNumber: 2),
+        Group(groupName: "FIDE", groupTopic: "Chess", groupNumber: 3),
+        Group(groupName: "IBU", groupTopic: "Biathlon", groupNumber: 4),
+        Group(groupName: "Big Lapot", groupTopic: "Lapta", groupNumber: 5)
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,15 +25,14 @@ class GroupsTVController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 10
+        return groups.count
     }
 
  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupCell.reuseId, for: indexPath) as? GroupCell else { fatalError("Cell cannot be dequeued")}
 
-        cell.groupnameLabel.text = "EA FIFA"
+        cell.groupnameLabel.text = groups[indexPath.row].groupName
         
         return cell
     }
