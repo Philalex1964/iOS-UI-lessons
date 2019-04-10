@@ -12,4 +12,5 @@ struct Group {
     let groupName: String
     let groupTopic: String
     var groupNumber: Int
+    var groupImageName: String
 }

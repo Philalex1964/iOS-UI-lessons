@@ -5,7 +5,6 @@
 //  Created by Александр Филиппов on 10.04.2019.
 //  Copyright © 2019 Philalex. All rights reserved.
 //
-import UIKit
 import Foundation
 
 enum Gender {
@@ -16,7 +15,6 @@ struct Friend {
     let friendName: String
     let friendGender: Gender
     var groupMemberNumber: Int
-    //var friendImage: UIImageView
     var friendImageName: String
     
 }

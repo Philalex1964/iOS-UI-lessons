@@ -11,11 +11,11 @@ import UIKit
 class GroupsTVController: UITableViewController {
 
     private var groups = [
-        Group(groupName: "MLB", groupTopic: "Baseball", groupNumber: 1),
-        Group(groupName: "NFL", groupTopic: "American Football", groupNumber: 2),
-        Group(groupName: "FIDE", groupTopic: "Chess", groupNumber: 3),
-        Group(groupName: "IBU", groupTopic: "Biathlon", groupNumber: 4),
-        Group(groupName: "Big Lapot", groupTopic: "Lapta", groupNumber: 5)
+        Group(groupName: "MLB", groupTopic: "Baseball", groupNumber: 1, groupImageName: "MLB"),
+        Group(groupName: "Super Bowl", groupTopic: "American Football", groupNumber: 2, groupImageName: "MLB"),
+        Group(groupName: "FIDE", groupTopic: "Chess", groupNumber: 3, groupImageName: "FIDE"),
+        Group(groupName: "IBU", groupTopic: "Biathlon", groupNumber: 4, groupImageName: "IBU"),
+        Group(groupName: "Big Lapot", groupTopic: "Lapta", groupNumber: 5, groupImageName: "Big Lapot")
     ]
     
     override func viewDidLoad() {
@@ -33,6 +33,7 @@ class GroupsTVController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupCell.reuseId, for: indexPath) as? GroupCell else { fatalError("Cell cannot be dequeued")}
 
         cell.groupnameLabel.text = groups[indexPath.row].groupName
+        cell.groupImage.image = UIImage(named: groups[indexPath.row].groupImageName)
         
         return cell
     }

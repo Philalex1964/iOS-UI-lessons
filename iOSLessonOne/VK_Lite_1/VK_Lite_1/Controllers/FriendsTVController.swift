@@ -25,7 +25,6 @@ class FriendsTVController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return friends.count
     }
   
@@ -35,6 +34,7 @@ class FriendsTVController: UITableViewController {
         cell.friendnameLabel.text = friends[indexPath.row].friendName
         //cell.friendphotoLabel.image = friends[indexPath.row].friendimageName
         cell.friendphotoImage.image = UIImage(named: friends[indexPath.row].friendImageName)
+        
         return cell
     }
  

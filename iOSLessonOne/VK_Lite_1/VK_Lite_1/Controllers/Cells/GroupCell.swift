@@ -13,6 +13,8 @@ class GroupCell: UITableViewCell {
     static let reuseId = "GroupCell"
     
     @IBOutlet weak var groupnameLabel: UILabel!
+    @IBOutlet weak var groupImage: UIImageView!
+
     
     
     override func awakeFromNib() {

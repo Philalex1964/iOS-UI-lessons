@@ -174,28 +174,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="168" id="YA7-q2-Rrv" customClass="GroupCell" customModule="VK_Lite_1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="168"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="169" id="D1s-gl-yxs" userLabel="GroupCell" customClass="GroupCell" customModule="VK_Lite_1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="169"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YA7-q2-Rrv" id="pGu-AG-Sn8" customClass="GroupCell" customModule="VK_Lite_1" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="167.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D1s-gl-yxs" id="DO9-ts-J9c">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="168.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alk-e8-rK2">
-                                            <rect key="frame" x="36" y="72" width="342" height="24"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bj-kP-zwt">
+                                            <rect key="frame" x="36" y="71.5" width="342" height="26"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FIFA" translatesAutoresizingMaskIntoConstraints="NO" id="Lo9-ez-blM" userLabel="groupImage">
+                                            <rect key="frame" x="318" y="54.5" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="2ie-vG-mTy"/>
+                                                <constraint firstAttribute="width" secondItem="Lo9-ez-blM" secondAttribute="height" multiplier="1:1" id="GCV-Se-4CD"/>
+                                                <constraint firstAttribute="width" constant="60" id="dK3-cc-J7w"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="alk-e8-rK2" firstAttribute="leading" secondItem="pGu-AG-Sn8" secondAttribute="leadingMargin" constant="16" id="4Cn-9d-y2Z"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="alk-e8-rK2" secondAttribute="trailing" constant="16" id="WXG-kM-Mq9"/>
-                                        <constraint firstItem="alk-e8-rK2" firstAttribute="centerY" secondItem="pGu-AG-Sn8" secondAttribute="centerY" id="X6s-LI-CCa"/>
+                                        <constraint firstItem="7bj-kP-zwt" firstAttribute="centerY" secondItem="DO9-ts-J9c" secondAttribute="centerY" id="05B-U1-3TW"/>
+                                        <constraint firstItem="7bj-kP-zwt" firstAttribute="leading" secondItem="DO9-ts-J9c" secondAttribute="leadingMargin" constant="16" id="9hj-pX-uB2"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Lo9-ez-blM" secondAttribute="trailing" constant="16" id="AqZ-XH-iR4"/>
+                                        <constraint firstItem="Lo9-ez-blM" firstAttribute="centerY" secondItem="DO9-ts-J9c" secondAttribute="centerY" id="SJo-yT-Fvv"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7bj-kP-zwt" secondAttribute="trailing" constant="16" id="XoH-Rs-d4Y"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="groupnameLabel" destination="alk-e8-rK2" id="cAs-2B-bQF"/>
+                                    <outlet property="groupImage" destination="Lo9-ez-blM" id="6fz-rd-MSO"/>
+                                    <outlet property="groupnameLabel" destination="7bj-kP-zwt" id="872-sT-WWf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -229,28 +240,39 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="168" id="NI0-Qn-c5X" customClass="GroupCell" customModule="VK_Lite_1" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="168"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="169" id="hKa-G3-IPz" userLabel="GroupCell" customClass="GroupCell" customModule="VK_Lite_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="169"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NI0-Qn-c5X" id="mHb-Hj-BFq" customClass="GroupCell" customModule="VK_Lite_1" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="167.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hKa-G3-IPz" id="gAE-0p-xu4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="168.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Had-Si-S1J">
-                                                    <rect key="frame" x="36" y="71" width="342" height="25.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxK-fL-LCI">
+                                                    <rect key="frame" x="36" y="71.5" width="342" height="26"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FIFA" translatesAutoresizingMaskIntoConstraints="NO" id="TLK-Ar-BhW" userLabel="groupImage">
+                                                    <rect key="frame" x="318" y="54.5" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="5Ad-YE-exn"/>
+                                                        <constraint firstAttribute="width" secondItem="TLK-Ar-BhW" secondAttribute="height" multiplier="1:1" id="6k1-VR-fM9"/>
+                                                        <constraint firstAttribute="width" constant="60" id="geu-0m-NxE"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Had-Si-S1J" secondAttribute="trailing" constant="16" id="So0-Iu-ziA"/>
-                                                <constraint firstItem="Had-Si-S1J" firstAttribute="leading" secondItem="mHb-Hj-BFq" secondAttribute="leadingMargin" constant="16" id="Uqo-eI-kdf"/>
-                                                <constraint firstItem="Had-Si-S1J" firstAttribute="centerY" secondItem="mHb-Hj-BFq" secondAttribute="centerY" id="iMY-FJ-qWa"/>
+                                                <constraint firstItem="UxK-fL-LCI" firstAttribute="centerY" secondItem="gAE-0p-xu4" secondAttribute="centerY" id="0N5-Di-dgd"/>
+                                                <constraint firstItem="UxK-fL-LCI" firstAttribute="leading" secondItem="gAE-0p-xu4" secondAttribute="leadingMargin" constant="16" id="UMM-Yj-f1a"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="TLK-Ar-BhW" secondAttribute="trailing" constant="16" id="dm1-QG-LFz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UxK-fL-LCI" secondAttribute="trailing" constant="16" id="eov-zq-zIL"/>
+                                                <constraint firstItem="TLK-Ar-BhW" firstAttribute="centerY" secondItem="gAE-0p-xu4" secondAttribute="centerY" id="lzS-LL-QVZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="groupnameLabel" destination="Had-Si-S1J" id="fhR-45-e2A"/>
+                                            <outlet property="groupImage" destination="TLK-Ar-BhW" id="Ryk-Rl-qVa"/>
+                                            <outlet property="groupnameLabel" destination="UxK-fL-LCI" id="AQI-N2-7XV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -296,20 +318,20 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-xP-M4J" userLabel="FriendphotoImage">
-                                            <rect key="frame" x="282" y="20.5" width="128" height="128"/>
+                                            <rect key="frame" x="318" y="54.5" width="60" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="ueW-xP-M4J" secondAttribute="height" multiplier="1:1" id="1Vf-9e-kVI"/>
-                                                <constraint firstAttribute="height" constant="128" id="fAx-0e-Xf7"/>
-                                                <constraint firstAttribute="width" constant="128" id="q9C-uk-lDs"/>
+                                                <constraint firstAttribute="height" constant="60" id="fAx-0e-Xf7"/>
+                                                <constraint firstAttribute="width" constant="60" id="q9C-uk-lDs"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="gpy-ZH-olv" secondAttribute="trailing" constant="16" id="3QL-FB-fGg"/>
-                                        <constraint firstItem="ueW-xP-M4J" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="CXJ-hh-HbN"/>
                                         <constraint firstItem="gpy-ZH-olv" firstAttribute="leading" secondItem="ZM5-J8-0ya" secondAttribute="leadingMargin" constant="16" id="UVH-c9-3p9"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ueW-xP-M4J" secondAttribute="trailing" constant="16" id="XxA-0C-tgb"/>
                                         <constraint firstItem="gpy-ZH-olv" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="fFF-wP-gyT"/>
-                                        <constraint firstItem="ueW-xP-M4J" firstAttribute="trailing" secondItem="ZM5-J8-0ya" secondAttribute="trailingMargin" constant="16" id="mMo-Xf-njc"/>
+                                        <constraint firstItem="ueW-xP-M4J" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="iZ1-p8-YiP"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -427,6 +449,7 @@
     </scenes>
     <resources>
         <image name="Alexey" width="640" height="640"/>
+        <image name="FIFA" width="64" height="64"/>
         <image name="background-1" width="690" height="1226"/>
         <image name="vk-blue" width="80" height="80"/>
     </resources>

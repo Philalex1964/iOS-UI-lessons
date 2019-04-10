@@ -13,11 +13,11 @@ class RecommendedGroupsController: UIViewController {
     public var groupName = ""
     
     private let groups: [Group] = [
-        Group(groupName: "EA FIFA", groupTopic: "Football", groupNumber: 1),
-        Group(groupName: "EA NBA", groupTopic: "Basketball", groupNumber: 2),
-        Group(groupName: "EA NHL", groupTopic: "Hockey", groupNumber: 3),
-        Group(groupName: "EA F1", groupTopic: "Racing", groupNumber: 4),
-        Group(groupName: "EA Big Slum", groupTopic: "Tennis", groupNumber: 5)
+        Group(groupName: "FIFA", groupTopic: "Football", groupNumber: 1, groupImageName: "FIFA" ),
+        Group(groupName: "NBA", groupTopic: "Basketball", groupNumber: 2, groupImageName: "NBA"),
+        Group(groupName: "NHL", groupTopic: "Hockey", groupNumber: 3, groupImageName: "NHL"),
+        Group(groupName: "F1", groupTopic: "Racing", groupNumber: 4, groupImageName: "F1"),
+        Group(groupName: "Grand Slum", groupTopic: "Tennis", groupNumber: 5, groupImageName: "Grand Slum")
     ]
     
     @IBOutlet var tableView: UITableView! {
@@ -45,6 +45,7 @@ extension RecommendedGroupsController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupCell.reuseId, for: indexPath) as? GroupCell else { fatalError("Cell cannot be dequeued")}
         
         cell.groupnameLabel.text = groups[indexPath.row].groupName
+        cell.groupImage.image = UIImage(named: groups[indexPath.row].groupImageName)
         
         return cell        
     }
