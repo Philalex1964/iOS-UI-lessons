@@ -16,7 +16,7 @@ struct Friend {
     let friendName: String
     let friendGender: Gender
     var groupMemberNumber: Int
-    //let imageName: String
+    let imageName: String
 }
 
 

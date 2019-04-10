@@ -10,7 +10,7 @@ import UIKit
 
 class RecommendedGroupsController: UIViewController {
     
-    public var groupname = ""
+    public var groupName = ""
     
     private let groups: [Group] = [
         Group(groupName: "EA FIFA", groupTopic: "Football", groupNumber: 1),
@@ -25,7 +25,7 @@ class RecommendedGroupsController: UIViewController {
             tableView.dataSource = self
             //tableView.delegate = self
             
-            title = groupname
+            title = groupName
         }
     }
     

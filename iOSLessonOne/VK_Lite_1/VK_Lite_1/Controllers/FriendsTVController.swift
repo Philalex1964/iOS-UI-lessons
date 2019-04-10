@@ -10,27 +10,29 @@ import UIKit
 
 class FriendsTVController: UITableViewController {
 
+    private var friends: [Friend] = [
+        Friend(friendName: "Alexey", friendGender: .male, groupMemberNumber: 1, imageName: "Alexey"),
+        Friend(friendName: "Anton", friendGender: .male, groupMemberNumber: 2, imageName: "Anton"),
+        Friend(friendName: "Dmitry", friendGender: .male, groupMemberNumber: 3, imageName: "Dmitry"),
+        Friend(friendName: "Igor", friendGender: .male, groupMemberNumber: 4, imageName: "Igor"),
+        Friend(friendName: "Uliana", friendGender: .female, groupMemberNumber: 5, imageName: "Uliana")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return friends.count
     }
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendCell.reuseId, for: indexPath) as? FriendCell else { fatalError("Cell cannot be dequeued")}
 
-        cell.friendnameLabel.text = "Pivovarov"
+        cell.friendnameLabel.text = friends[indexPath.row].friendName
         
         return cell
     }
@@ -74,15 +76,13 @@ class FriendsTVController: UITableViewController {
   
     // MARK: - Navigation
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      if segue.identifier == "Show Photo",
-        let photoVC = segue.destination as? PhotosOfFriendsCVController,
-        let indexPath = tableView.indexPathForSelectedRow {
-        let frienName = 
-        }
-        
-        
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//      if segue.identifier == "Show Photo",
+//        let photoVC = segue.destination as? PhotosOfFriendsCVController,
+//        let indexPath = tableView.indexPathForSelectedRow {
+//        let friendName =
+//        }
+//    }
     
 
 }
