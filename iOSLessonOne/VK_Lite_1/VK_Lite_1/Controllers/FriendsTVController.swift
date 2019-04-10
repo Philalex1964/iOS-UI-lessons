@@ -77,13 +77,14 @@ class FriendsTVController: UITableViewController {
   
     // MARK: - Navigation
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//      if segue.identifier == "Show Photo",
-//        let photoVC = segue.destination as? PhotosOfFriendsCVController,
-//        let indexPath = tableView.indexPathForSelectedRow {
-//        let friendName =
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      if segue.identifier == "Show Photo",
+        let photoVC = segue.destination as? PhotosOfFriendsCVController,
+        let indexPath = tableView.indexPathForSelectedRow {
+        let friendName = friends[indexPath.row].friendName
+        photoVC.friendName = friendName
+        }
+    }
     
 
 }
