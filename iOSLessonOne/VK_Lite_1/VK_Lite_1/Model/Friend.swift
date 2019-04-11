@@ -5,7 +5,7 @@
 //  Created by Александр Филиппов on 10.04.2019.
 //  Copyright © 2019 Philalex. All rights reserved.
 //
-import Foundation
+import UIKit
 
 enum Gender {
     case male, female
@@ -16,7 +16,7 @@ struct Friend {
     let friendGender: Gender
     var groupMemberNumber: Int
     var friendImageName: String
-    
+    //let friendImage: UIIMage
 }
 
 

@@ -23,7 +23,7 @@ class RecommendedGroupsController: UIViewController {
     @IBOutlet var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
-            //tableView.delegate = self
+            tableView.delegate = self
             
             title = groupName
         }
@@ -49,6 +49,8 @@ extension RecommendedGroupsController: UITableViewDataSource {
         
         return cell        
     }
-    
+}
+
+extension RecommendedGroupsController: UITableViewDelegate {
     
 }

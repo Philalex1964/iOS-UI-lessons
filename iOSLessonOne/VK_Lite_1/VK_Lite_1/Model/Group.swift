@@ -6,11 +6,12 @@
 //  Copyright © 2019 Philalex. All rights reserved.
 // Model.File
 
-import Foundation
+import UIKit
 
 struct Group {
     let groupName: String
     let groupTopic: String
     var groupNumber: Int
     var groupImageName: String
+    //let groupImage: UIImage
 }
