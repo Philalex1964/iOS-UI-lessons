@@ -10,6 +10,8 @@ import UIKit
 
 class FriendsTVController: UITableViewController {
 
+    
+    
     private var friends: [Friend] = [
         Friend(friendName: "Alexey", friendGender: .male, groupMemberNumber: 1, friendImageName: "Alexey"),
         Friend(friendName: "Anton", friendGender: .male, groupMemberNumber: 2, friendImageName: "Anton"),
@@ -94,3 +96,6 @@ class FriendsTVController: UITableViewController {
     
 
 }
+
+
+
