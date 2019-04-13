@@ -306,42 +306,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="169" id="WPF-MQ-DnK" customClass="FriendCell" customModule="VK_Lite_1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="169"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="54" id="WPF-MQ-DnK" customClass="FriendCell" customModule="VK_Lite_1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WPF-MQ-DnK" id="ZM5-J8-0ya">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="168.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="53.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpy-ZH-olv">
-                                            <rect key="frame" x="36" y="71.5" width="342" height="26"/>
+                                            <rect key="frame" x="36" y="14.5" width="342" height="26"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-xP-M4J" userLabel="FriendphotoImage" customClass="avatarPhotoImageViewController" customModule="VK_Lite_1" customModuleProvider="target">
-                                            <rect key="frame" x="318" y="54.5" width="60" height="60"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-xP-M4J" userLabel="FriendphotoImage" customClass="avatarPhotoImageViewController" customModule="VK_Lite_1" customModuleProvider="target">
+                                            <rect key="frame" x="328" y="2.5" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="ueW-xP-M4J" secondAttribute="height" multiplier="1:1" id="1Vf-9e-kVI"/>
-                                                <constraint firstAttribute="height" constant="60" id="fAx-0e-Xf7"/>
-                                                <constraint firstAttribute="width" constant="60" id="q9C-uk-lDs"/>
+                                                <constraint firstAttribute="height" constant="50" id="fAx-0e-Xf7"/>
+                                                <constraint firstAttribute="width" constant="50" id="q9C-uk-lDs"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="30"/>
+                                                    <integer key="value" value="25"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="30"/>
+                                                    <real key="value" value="25"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="gpy-ZH-olv" secondAttribute="trailing" constant="16" id="3QL-FB-fGg"/>
+                                        <constraint firstAttribute="bottom" secondItem="ueW-xP-M4J" secondAttribute="bottom" constant="2" id="5TI-P2-Sci"/>
                                         <constraint firstItem="gpy-ZH-olv" firstAttribute="leading" secondItem="ZM5-J8-0ya" secondAttribute="leadingMargin" constant="16" id="UVH-c9-3p9"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="ueW-xP-M4J" secondAttribute="trailing" constant="16" id="XxA-0C-tgb"/>
                                         <constraint firstItem="gpy-ZH-olv" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="fFF-wP-gyT"/>
                                         <constraint firstItem="ueW-xP-M4J" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="iZ1-p8-YiP"/>
+                                        <constraint firstItem="ueW-xP-M4J" firstAttribute="top" secondItem="ZM5-J8-0ya" secondAttribute="top" constant="2" id="j19-n1-2UP"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
