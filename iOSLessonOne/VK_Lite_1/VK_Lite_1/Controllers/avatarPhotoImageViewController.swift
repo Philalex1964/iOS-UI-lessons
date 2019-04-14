@@ -10,11 +10,6 @@ import UIKit
 
 
 @IBDesignable class avatarPhotoImageViewController: UIImageView {
-//    @IBInspectable public var filled = false {
-//        didSet {
-//            setNeedsDisplay()
-//        }
-//    }
 }
 
 extension UIImageView {
