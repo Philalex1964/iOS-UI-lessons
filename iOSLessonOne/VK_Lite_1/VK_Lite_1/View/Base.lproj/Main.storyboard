@@ -301,7 +301,7 @@
         <scene sceneID="nq5-6a-lLk">
             <objects>
                 <tableViewController id="57Z-oH-De7" customClass="FriendsTVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zh5-S5-Dm4">
+                    <tableView key="view" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zh5-S5-Dm4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -319,6 +319,29 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJD-9V-mkb" customClass="ShadowViewController" customModule="VK_Lite_1" customModuleProvider="target">
+                                            <rect key="frame" x="328" y="2.5" width="50" height="50"/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="uJD-9V-mkb" secondAttribute="height" multiplier="1:1" id="1P5-s0-7xE"/>
+                                                <constraint firstAttribute="height" constant="50" id="DdV-W6-adR"/>
+                                                <constraint firstAttribute="width" constant="50" id="emv-ZH-67O"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                    <size key="value" width="4" height="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-xP-M4J" userLabel="FriendphotoImage" customClass="avatarPhotoImageViewController" customModule="VK_Lite_1" customModuleProvider="target">
                                             <rect key="frame" x="328" y="2.5" width="50" height="50"/>
                                             <constraints>
@@ -339,7 +362,9 @@
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="gpy-ZH-olv" secondAttribute="trailing" constant="16" id="3QL-FB-fGg"/>
                                         <constraint firstAttribute="bottom" secondItem="ueW-xP-M4J" secondAttribute="bottom" constant="2" id="5TI-P2-Sci"/>
+                                        <constraint firstItem="uJD-9V-mkb" firstAttribute="centerX" secondItem="ueW-xP-M4J" secondAttribute="centerX" id="Dsu-fk-cB9"/>
                                         <constraint firstItem="gpy-ZH-olv" firstAttribute="leading" secondItem="ZM5-J8-0ya" secondAttribute="leadingMargin" constant="16" id="UVH-c9-3p9"/>
+                                        <constraint firstItem="uJD-9V-mkb" firstAttribute="centerY" secondItem="ueW-xP-M4J" secondAttribute="centerY" id="XbM-EW-Jhc"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="ueW-xP-M4J" secondAttribute="trailing" constant="16" id="XxA-0C-tgb"/>
                                         <constraint firstItem="gpy-ZH-olv" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="fFF-wP-gyT"/>
                                         <constraint firstItem="ueW-xP-M4J" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="iZ1-p8-YiP"/>
@@ -349,10 +374,19 @@
                                 <connections>
                                     <outlet property="friendnameLabel" destination="gpy-ZH-olv" id="K7f-ig-v73"/>
                                     <outlet property="friendphotoImage" destination="ueW-xP-M4J" id="VEh-iZ-yhK"/>
+                                    <outlet property="shadowView" destination="uJD-9V-mkb" id="X8q-le-IGB"/>
                                     <segue destination="FpE-P5-6uc" kind="show" identifier="Show Photo" id="x8Y-tC-dm2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="27"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="57Z-oH-De7" id="HgL-OP-SEw"/>
                             <outlet property="delegate" destination="57Z-oH-De7" id="KZS-ec-cuZ"/>

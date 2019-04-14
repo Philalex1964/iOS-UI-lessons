@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4C836A2262A3CD00734C4E /* ShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C83692262A3CD00734C4E /* ShadowViewController.swift */; };
 		2C5CDDAE225CDDCA00B29267 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CDDAD225CDDC900B29267 /* FriendCell.swift */; };
 		2C5CDDB0225CEBBA00B29267 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CDDAF225CEBBA00B29267 /* GroupCell.swift */; };
 		2C5CDDB3225CF83D00B29267 /* RecommendedGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CDDB2225CF83D00B29267 /* RecommendedGroupsController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C4C83692262A3CD00734C4E /* ShadowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowViewController.swift; sourceTree = "<group>"; };
 		2C5CDDAD225CDDC900B29267 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		2C5CDDAF225CEBBA00B29267 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		2C5CDDB2225CF83D00B29267 /* RecommendedGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGroupsController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				2C6519A12251542000D65F77 /* LoginScreenController.swift */,
 				2C6429F92259F15C00285078 /* MainTabbarController.swift */,
 				2C6429F122597CE300285078 /* FriendsTVController.swift */,
+				2C4C83692262A3CD00734C4E /* ShadowViewController.swift */,
 				2CFED9E02262866F003F29E8 /* avatarPhotoImageViewController.swift */,
 				2C6429F322597D0D00285078 /* GroupsTVController.swift */,
 				2C5CDDB2225CF83D00B29267 /* RecommendedGroupsController.swift */,
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4C836A2262A3CD00734C4E /* ShadowViewController.swift in Sources */,
 				2C5CDDB9225D53F100B29267 /* Group.swift in Sources */,
 				2C5CDDB0225CEBBA00B29267 /* GroupCell.swift in Sources */,
 				2C6429F822597D7C00285078 /* PhotosOfFriendsCVController.swift in Sources */,

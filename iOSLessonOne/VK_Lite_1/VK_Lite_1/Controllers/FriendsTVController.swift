@@ -93,8 +93,6 @@ class FriendsTVController: UITableViewController {
         //let friendphotoImage =  UIImage(named:friends[indexPath.row].friendImageName)
         }
     }
-    
-
 }
 
 
