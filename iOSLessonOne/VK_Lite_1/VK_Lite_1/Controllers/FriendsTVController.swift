@@ -10,37 +10,36 @@ import UIKit
 
 class FriendsTVController: UITableViewController {
 
+    
+    
+    private var friends: [Friend] = [
+        Friend(friendName: "Alexey", friendGender: .male, groupMemberNumber: 1, friendImageName: "Alexey"),
+        Friend(friendName: "Anton", friendGender: .male, groupMemberNumber: 2, friendImageName: "Anton"),
+        Friend(friendName: "Dmitry", friendGender: .male, groupMemberNumber: 3, friendImageName: "Dmitry"),
+        Friend(friendName: "Igor", friendGender: .male, groupMemberNumber: 4, friendImageName: "Igor"),
+        Friend(friendName: "Uliana", friendGender: .female, groupMemberNumber: 5, friendImageName: "Uliana")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return friends.count
     }
-
-    /*
+  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendCell.reuseId, for: indexPath) as? FriendCell else { fatalError("Cell cannot be dequeued")}
 
-        // Configure the cell...
-
+        cell.friendnameLabel.text = friends[indexPath.row].friendName
+        //cell.friendphotoLabel.image = friends[indexPath.row].friendimageName
+        cell.friendphotoImage.image = UIImage(named: friends[indexPath.row].friendImageName)
+        
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -77,14 +76,26 @@ class FriendsTVController: UITableViewController {
     }
     */
 
-    /*
+  
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+      if segue.identifier == "Show Photo",
+        let photoVC = segue.destination as? PhotosOfFriendsCVController,
+        let indexPath = tableView.indexPathForSelectedRow {
+        let friendName = friends[indexPath.row].friendName
+        
+        photoVC.friendName = friendName
+        
+        //MARK: - An attempt to send Photo together with name. I'll do it in next versions anyway.
+        
+        //photoVC.photoImageView = friendphotoImage // - здесь загвоздка: не признает photoImageView параметром PhotosOfFriendsCVController =(
+        //let friendphotoImage =  UIImage(named:friends[indexPath.row].friendImageName)
+        }
     }
-    */
+    
 
 }
+
+
+
