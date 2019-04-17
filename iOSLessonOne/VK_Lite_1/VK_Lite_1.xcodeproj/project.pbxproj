@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C47106D2267831E008CA428 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47106C2267831E008CA428 /* LikeControl.swift */; };
 		2C4C836A2262A3CD00734C4E /* ShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C83692262A3CD00734C4E /* ShadowViewController.swift */; };
 		2C5CDDAE225CDDCA00B29267 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CDDAD225CDDC900B29267 /* FriendCell.swift */; };
 		2C5CDDB0225CEBBA00B29267 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CDDAF225CEBBA00B29267 /* GroupCell.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C47106C2267831E008CA428 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
 		2C4C83692262A3CD00734C4E /* ShadowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowViewController.swift; sourceTree = "<group>"; };
 		2C5CDDAD225CDDC900B29267 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		2C5CDDAF225CEBBA00B29267 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
@@ -63,6 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C47106B226782CB008CA428 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				2C4C83692262A3CD00734C4E /* ShadowViewController.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		2C47106E22678383008CA428 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				2C47106C2267831E008CA428 /* LikeControl.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		2C5CDDB1225CEBC300B29267 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +131,8 @@
 		2C94F2F6225BBF6500A261B0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2C47106E22678383008CA428 /* Controls */,
+				2C47106B226782CB008CA428 /* Custom View */,
 				2C65199122514BFB00D65F77 /* Main.storyboard */,
 				2C65199622514BFF00D65F77 /* LaunchScreen.storyboard */,
 				2C65199422514BFF00D65F77 /* Assets.xcassets */,
@@ -129,7 +149,6 @@
 				2C6519A12251542000D65F77 /* LoginScreenController.swift */,
 				2C6429F92259F15C00285078 /* MainTabbarController.swift */,
 				2C6429F122597CE300285078 /* FriendsTVController.swift */,
-				2C4C83692262A3CD00734C4E /* ShadowViewController.swift */,
 				2CFED9E02262866F003F29E8 /* avatarPhotoImageViewController.swift */,
 				2C6429F322597D0D00285078 /* GroupsTVController.swift */,
 				2C5CDDB2225CF83D00B29267 /* RecommendedGroupsController.swift */,
@@ -212,6 +231,7 @@
 			files = (
 				2C4C836A2262A3CD00734C4E /* ShadowViewController.swift in Sources */,
 				2C5CDDB9225D53F100B29267 /* Group.swift in Sources */,
+				2C47106D2267831E008CA428 /* LikeControl.swift in Sources */,
 				2C5CDDB0225CEBBA00B29267 /* GroupCell.swift in Sources */,
 				2C6429F822597D7C00285078 /* PhotosOfFriendsCVController.swift in Sources */,
 				2C5CDDBB225D553600B29267 /* Friend.swift in Sources */,

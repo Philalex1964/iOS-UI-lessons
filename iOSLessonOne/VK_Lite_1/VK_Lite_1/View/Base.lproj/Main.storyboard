@@ -415,6 +415,11 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <view key="backgroundView" contentMode="scaleToFill" id="HNO-Re-pgS">
+                            <rect key="frame" x="0.0" y="-88" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="bV6-bL-r6J" userLabel="PhotoCell" customClass="PhotoCell" customModule="VK_Lite_1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
@@ -426,12 +431,23 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="dpv-g9-cQu">
                                             <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7An-B4-WHD" customClass="LikeControl" customModule="VK_Lite_1" customModuleProvider="target">
+                                            <rect key="frame" x="101" y="113" width="50" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="21m-8v-8zC"/>
+                                                <constraint firstAttribute="width" secondItem="7An-B4-WHD" secondAttribute="height" multiplier="1:1" id="YM2-PT-jNL"/>
+                                                <constraint firstAttribute="height" constant="50" id="l1m-7V-6Q9"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="dpv-g9-cQu" secondAttribute="bottom" id="0WW-SU-ySF"/>
                                     <constraint firstAttribute="trailing" secondItem="dpv-g9-cQu" secondAttribute="trailing" id="APV-Qe-N07"/>
                                     <constraint firstItem="dpv-g9-cQu" firstAttribute="top" secondItem="bV6-bL-r6J" secondAttribute="top" id="ceE-fz-4bm"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="7An-B4-WHD" secondAttribute="trailing" id="cuY-6P-tbS"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="7An-B4-WHD" secondAttribute="bottom" id="dAc-63-PHR"/>
                                     <constraint firstAttribute="trailing" secondItem="dpv-g9-cQu" secondAttribute="trailing" id="hRf-BB-wyI"/>
                                     <constraint firstAttribute="bottom" secondItem="dpv-g9-cQu" secondAttribute="bottom" id="j1u-fG-vHe"/>
                                     <constraint firstItem="dpv-g9-cQu" firstAttribute="leading" secondItem="bV6-bL-r6J" secondAttribute="leading" id="r2I-gt-dNr"/>
