@@ -12,7 +12,6 @@ class LikeControl: UIControl {
 
     public var isLiked: Bool = false
     let heartImageView = UIImageView()
-    let likeNumberView = UIView()
     let likeNumberLabel = UILabel()
 
     
@@ -33,11 +32,9 @@ class LikeControl: UIControl {
         let tapGR = UITapGestureRecognizer(target: self, action: #selector(likeTapped))
         heartImageView.isUserInteractionEnabled = true
         heartImageView.addGestureRecognizer(tapGR)
-        
-        addSubview(heartImageView)
         heartImageView.image = UIImage(named: "heart")
-        //heartImageView.addSubview(likeNumberView)
-        heartImageView.addSubview(likeNumberLabel)
+        addSubview(heartImageView)
+        addSubview(likeNumberLabel)
         likeNumberLabel.text = "0"
     }
     
@@ -45,8 +42,18 @@ class LikeControl: UIControl {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        heartImageView.frame = bounds
-        likeNumberLabel.frame = heartImageView.bounds
+        heartImageView.translatesAutoresizingMaskIntoConstraints = false
+        likeNumberLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            heartImageView.heightAnchor.constraint(equalToConstant: bounds.height),
+            heartImageView.widthAnchor.constraint(equalTo: heartImageView.heightAnchor),
+            heartImageView.topAnchor.constraint(equalTo: self.topAnchor),
+            heartImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            likeNumberLabel.trailingAnchor.constraint(equalTo: heartImageView.leadingAnchor),
+            likeNumberLabel.widthAnchor.constraint(equalToConstant: 20),
+            likeNumberLabel.bottomAnchor.constraint(equalTo: heartImageView.bottomAnchor)
+            ])
     }
     
     //MARK: - Privates
@@ -62,12 +69,6 @@ class LikeControl: UIControl {
     
     
 }
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+
 
 

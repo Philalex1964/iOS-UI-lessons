@@ -86,11 +86,6 @@ class FriendsTVController: UITableViewController {
         let friendName = friends[indexPath.row].friendName
         
         photoVC.friendName = friendName
-        
-        //MARK: - An attempt to send Photo together with name. I'll do it in next versions anyway.
-        
-        //photoVC.photoImageView = friendphotoImage // - здесь загвоздка: не признает photoImageView параметром PhotosOfFriendsCVController =(
-        //let friendphotoImage =  UIImage(named:friends[indexPath.row].friendImageName)
         }
     }
 }
