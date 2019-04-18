@@ -12,7 +12,6 @@ class LikeControl: UIControl {
 
     public var isLiked: Bool = false
     let heartImageView = UIImageView()
-    var likeNumber: Int = 0
     let likeNumberLabel = UILabel()
     
 
@@ -37,6 +36,8 @@ class LikeControl: UIControl {
         
         addSubview(heartImageView)
         heartImageView.image = UIImage(named: "heart")
+        //addSubview(likeNumberLabel)
+        
     }
     
     
@@ -50,6 +51,8 @@ class LikeControl: UIControl {
     @objc func likeTapped() {
         isLiked.toggle()
         heartImageView.image = isLiked ? UIImage(named: "heart") : UIImage(named: "heartred")
+        likeNumberLabel.text = isLiked ? "0" : "1"
+        likeNumberLabel.textColor = isLiked ? .black : .red
         
         sendActions(for: .valueChanged)
         

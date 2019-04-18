@@ -11,8 +11,8 @@ import UIKit
 class PhotosOfFriendsCVController: UICollectionViewController {
 
     public var friendName = ""
-    //var likeNumber: Int = 0
-    //let likeNumberLabel: UILabel! = nil
+    
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +36,6 @@ class PhotosOfFriendsCVController: UICollectionViewController {
     
     //MARK _ Private
     @objc func cellLikePressed(_ sender: LikeControl) {
-        //likeNumber += 1
-        //likeNumberLabel.text = String(likeNumber)
-        //likeNumberLabel
         
         
         print("The cell liked status set to: \(sender.isLiked)")

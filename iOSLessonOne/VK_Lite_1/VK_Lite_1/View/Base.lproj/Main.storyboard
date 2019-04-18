@@ -465,7 +465,6 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="likeControl" destination="7An-B4-WHD" id="o23-Kn-gzO"/>
-                                    <outlet property="likeNumberLabel" destination="No8-Hw-zDj" id="a73-fw-KhA"/>
                                     <outlet property="photoImageView" destination="dpv-g9-cQu" id="XkS-gM-RIp"/>
                                 </connections>
                             </collectionViewCell>

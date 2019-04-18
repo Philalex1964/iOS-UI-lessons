@@ -15,5 +15,5 @@ class PhotoCell: UICollectionViewCell {
     @IBOutlet var photoImageView: UIImageView!
     
     @IBOutlet weak var likeControl: LikeControl!
-    @IBOutlet weak var likeNumberLabel: UILabel!
+  //  @IBOutlet weak var likeNumberLabel: UILabel!
 }
