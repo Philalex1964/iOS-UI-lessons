@@ -36,9 +36,9 @@ class LikeControl: UIControl {
         
         addSubview(heartImageView)
         heartImageView.image = UIImage(named: "heart")
-        addSubview(likeNumberView)
-//        likeNumberView.addSubview(likeNumberLabel)
-//        likeNumberLabel.text = "0"
+        //heartImageView.addSubview(likeNumberView)
+        heartImageView.addSubview(likeNumberLabel)
+        likeNumberLabel.text = "0"
     }
     
     
@@ -46,6 +46,7 @@ class LikeControl: UIControl {
         super.layoutSubviews()
         
         heartImageView.frame = bounds
+        likeNumberLabel.frame = heartImageView.bounds
     }
     
     //MARK: - Privates
