@@ -12,8 +12,8 @@ class LikeControl: UIControl {
 
     public var isLiked: Bool = false
     let heartImageView = UIImageView()
+    let likeNumberView = UIView()
     let likeNumberLabel = UILabel()
-    
 
     
     override init(frame: CGRect) {
@@ -36,8 +36,9 @@ class LikeControl: UIControl {
         
         addSubview(heartImageView)
         heartImageView.image = UIImage(named: "heart")
-        //addSubview(likeNumberLabel)
-        
+        addSubview(likeNumberView)
+//        likeNumberView.addSubview(likeNumberLabel)
+//        likeNumberLabel.text = "0"
     }
     
     

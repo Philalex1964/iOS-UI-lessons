@@ -431,6 +431,26 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="dpv-g9-cQu">
                                             <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-cs-j0f" userLabel="likeNumber View" customClass="LikeControl" customModule="VK_Lite_1" customModuleProvider="target">
+                                            <rect key="frame" x="99" y="131" width="20" height="40"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mui-xv-khS" userLabel="likeNumber Label">
+                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="40"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Mui-xv-khS" secondAttribute="trailing" id="01s-QJ-4hK"/>
+                                                <constraint firstItem="Mui-xv-khS" firstAttribute="leading" secondItem="fBr-cs-j0f" secondAttribute="leading" id="5Vm-kq-BE6"/>
+                                                <constraint firstAttribute="width" constant="20" id="DZC-Ci-5KV"/>
+                                                <constraint firstAttribute="height" constant="40" id="Fyf-VN-WkA"/>
+                                                <constraint firstAttribute="bottom" secondItem="Mui-xv-khS" secondAttribute="bottom" id="Jx7-rM-Dds"/>
+                                                <constraint firstItem="Mui-xv-khS" firstAttribute="top" secondItem="fBr-cs-j0f" secondAttribute="top" id="dfu-at-w97"/>
+                                            </constraints>
+                                        </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7An-B4-WHD" customClass="LikeControl" customModule="VK_Lite_1" customModuleProvider="target">
                                             <rect key="frame" x="119" y="131" width="40" height="40"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -440,28 +460,19 @@
                                                 <constraint firstAttribute="height" constant="40" id="l1m-7V-6Q9"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="No8-Hw-zDj">
-                                            <rect key="frame" x="102" y="131" width="17" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="0KY-Jz-O5Z"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="dpv-g9-cQu" secondAttribute="bottom" id="0WW-SU-ySF"/>
                                     <constraint firstAttribute="trailing" secondItem="dpv-g9-cQu" secondAttribute="trailing" id="APV-Qe-N07"/>
-                                    <constraint firstAttribute="bottom" secondItem="No8-Hw-zDj" secondAttribute="bottom" id="c2q-Zh-ntp"/>
+                                    <constraint firstAttribute="bottom" secondItem="fBr-cs-j0f" secondAttribute="bottom" id="ICz-xK-ZBr"/>
+                                    <constraint firstItem="7An-B4-WHD" firstAttribute="leading" secondItem="fBr-cs-j0f" secondAttribute="trailing" id="R4l-ys-Xjo"/>
                                     <constraint firstItem="dpv-g9-cQu" firstAttribute="top" secondItem="bV6-bL-r6J" secondAttribute="top" id="ceE-fz-4bm"/>
                                     <constraint firstAttribute="trailing" secondItem="7An-B4-WHD" secondAttribute="trailing" id="cuY-6P-tbS"/>
                                     <constraint firstAttribute="bottom" secondItem="7An-B4-WHD" secondAttribute="bottom" id="dAc-63-PHR"/>
                                     <constraint firstAttribute="trailing" secondItem="dpv-g9-cQu" secondAttribute="trailing" id="hRf-BB-wyI"/>
                                     <constraint firstAttribute="bottom" secondItem="dpv-g9-cQu" secondAttribute="bottom" id="j1u-fG-vHe"/>
                                     <constraint firstItem="dpv-g9-cQu" firstAttribute="leading" secondItem="bV6-bL-r6J" secondAttribute="leading" id="r2I-gt-dNr"/>
-                                    <constraint firstItem="7An-B4-WHD" firstAttribute="leading" secondItem="No8-Hw-zDj" secondAttribute="trailing" id="yKq-Xo-eHZ"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="likeControl" destination="7An-B4-WHD" id="o23-Kn-gzO"/>
