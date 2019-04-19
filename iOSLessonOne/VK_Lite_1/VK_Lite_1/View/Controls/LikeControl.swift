@@ -59,9 +59,9 @@ class LikeControl: UIControl {
     //MARK: - Privates
     @objc func likeTapped() {
         isLiked.toggle()
-        heartImageView.image = isLiked ? UIImage(named: "heart") : UIImage(named: "heartred")
-        likeNumberLabel.text = isLiked ? "0" : "1"
-        likeNumberLabel.textColor = isLiked ? .black : .red
+        heartImageView.image = isLiked ? UIImage(named: "heartred") : UIImage(named: "heart")
+        likeNumberLabel.text = isLiked ? "1" : "0"
+        likeNumberLabel.textColor = isLiked ? .red : .black
         
         sendActions(for: .valueChanged)
         
