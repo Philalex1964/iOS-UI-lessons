@@ -66,8 +66,6 @@ class LikeControl: UIControl {
         sendActions(for: .valueChanged)
         
     }
-    
-    
 }
 
 
