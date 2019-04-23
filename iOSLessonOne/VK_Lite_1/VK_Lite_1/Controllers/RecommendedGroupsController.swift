@@ -7,17 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
-class RecommendedGroupsController: UIViewController {
+class RecommendedGroupsController: UIViewController, NSFetchedResultsControllerDelegate {
     
     public var groupName = ""
     
-    public let groups: [Group] = [
-        Group(groupName: "FIFA", groupTopic: "Football", groupNumber: 1, groupImageName: "FIFA" ),
-        Group(groupName: "NBA", groupTopic: "Basketball", groupNumber: 2, groupImageName: "NBA"),
-        Group(groupName: "NHL", groupTopic: "Hockey", groupNumber: 3, groupImageName: "NHL"),
-        Group(groupName: "F1", groupTopic: "Racing", groupNumber: 4, groupImageName: "F1"),
-        Group(groupName: "Grand Slum", groupTopic: "Tennis", groupNumber: 5, groupImageName: "Grand Slum")
+    var fetchResultController: NSFetchedResultsController<GroupMO>!
+    
+    public var groups: [GroupMO] = [
+        
     ]
     
     @IBOutlet var tableView: UITableView! {
@@ -32,6 +31,25 @@ class RecommendedGroupsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //MARK: - Fetch data from data store
+        let fetchRequest: NSFetchRequest<GroupMO> = GroupMO.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "groupName", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+            let context = appDelegate.persistentContainer.viewContext
+            fetchResultController = NSFetchedResultsController(fetchRequest:
+                fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil,
+                              cacheName: nil)
+            fetchResultController.delegate = self
+            do {
+                try fetchResultController.performFetch()
+                if let fetchedObjects = fetchResultController.fetchedObjects {
+                    groups = fetchedObjects
+                }
+            } catch {
+                print(error)
+            }
+        }
         
     }
 }
@@ -45,7 +63,7 @@ extension RecommendedGroupsController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupCell.reuseId, for: indexPath) as? GroupCell else { fatalError("Cell cannot be dequeued")}
         
         cell.groupnameLabel.text = groups[indexPath.row].groupName
-        cell.groupImage.image = UIImage(named: groups[indexPath.row].groupImageName)
+        cell.groupImage.image = UIImage(named: groups[indexPath.row].groupImageName!)
         
         return cell        
     }

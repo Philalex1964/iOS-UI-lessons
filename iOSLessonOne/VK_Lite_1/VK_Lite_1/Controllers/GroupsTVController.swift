@@ -7,15 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class GroupsTVController: UITableViewController {
-
-    public var groups = [
-        Group(groupName: "MLB", groupTopic: "Baseball", groupNumber: 1, groupImageName: "MLB"),
-        Group(groupName: "Super Bowl", groupTopic: "American Football", groupNumber: 2, groupImageName: "Super Bowl"),
-        Group(groupName: "FIDE", groupTopic: "Chess", groupNumber: 3, groupImageName: "FIDE"),
-        Group(groupName: "IBU", groupTopic: "Biathlon", groupNumber: 4, groupImageName: "IBU"),
-        Group(groupName: "Big Lapot", groupTopic: "Lapta", groupNumber: 5, groupImageName: "Big Lapot")
+    
+    var group: GroupMO!
+    
+    public var groups: [GroupMO] = [
+        
     ]
     
     override func viewDidLoad() {
@@ -33,7 +32,7 @@ class GroupsTVController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupCell.reuseId, for: indexPath) as? GroupCell else { fatalError("Cell cannot be dequeued")}
 
         cell.groupnameLabel.text = groups[indexPath.row].groupName
-        cell.groupImage.image = UIImage(named: groups[indexPath.row].groupImageName)
+        cell.groupImage.image = UIImage(named: groups[indexPath.row].groupImageName!)
         
         return cell
     }
