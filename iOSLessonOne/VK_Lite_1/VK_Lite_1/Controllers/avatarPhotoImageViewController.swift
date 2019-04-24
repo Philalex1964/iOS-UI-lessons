@@ -19,20 +19,7 @@ extension UIImageView {
     }
 }
 
-/*extension UIImageView {
-    @IBInspectable var shadowColor: CGColor {
-        set { layer.shadowColor = newValue}
-        get { return layer.shadowColor ?? UIColor.black.cgColor}
-    }
-    @IBInspectable var shadowOpacity: Float {
-        set { layer.shadowOpacity = newValue}
-        get { return layer.shadowOpacity }
-    }
-    @IBInspectable var shadowRadius: CGFloat {
-        set { layer.shadowRadius = newValue}
-        get { return layer.shadowRadius}
-    }
-}*/
+
 
 
 
