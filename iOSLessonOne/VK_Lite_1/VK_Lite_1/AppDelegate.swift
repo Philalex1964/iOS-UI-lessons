@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
           let group = GroupMO(context: self.persistentContainer.viewContext)
-              group.groupName = "NBA"
-              group.groupTopic = "Basketball"
-              group.groupImageName = "NBA"
+              group.groupName = "Big Lapot"
+              group.groupTopic = "Russian Lapta"
+              group.groupImageName = "Big Lapot"
         
                 saveContext()
 
