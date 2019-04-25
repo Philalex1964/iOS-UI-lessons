@@ -525,13 +525,13 @@
         <!--News-->
         <scene sceneID="n72-qd-yKU">
             <objects>
-                <tableViewController id="ARQ-z7-149" sceneMemberID="viewController">
+                <tableViewController id="ARQ-z7-149" customClass="NewsTVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KF4-cj-1zh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="588" id="cyF-4G-57m" customClass="NewsCell" customModule="VK_Lite_1" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="588" id="cyF-4G-57m" customClass="NewsCell" customModule="VK_Lite_1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="588"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cyF-4G-57m" id="YdH-Y0-4Fc">
@@ -652,7 +652,7 @@
                                     <outlet property="likeButton" destination="wgZ-dv-BDI" id="7GI-Os-M6G"/>
                                     <outlet property="likesLabel" destination="3ty-Wn-7Fr" id="nhF-Kz-4ox"/>
                                     <outlet property="newsImage" destination="L8V-p2-70j" id="oLp-Ys-wGV"/>
-                                    <outlet property="newsTextViwq" destination="tQW-kR-T8R" id="ROX-Qh-n54"/>
+                                    <outlet property="newsTextView" destination="tQW-kR-T8R" id="xaa-3Q-tWV"/>
                                     <outlet property="seenLabel" destination="hnv-bz-X9k" id="eev-Jz-IhR"/>
                                     <outlet property="shareButton" destination="6wv-xv-877" id="Kad-NS-1dP"/>
                                     <outlet property="sharesLabel" destination="ScI-32-eZu" id="Too-1U-RXk"/>

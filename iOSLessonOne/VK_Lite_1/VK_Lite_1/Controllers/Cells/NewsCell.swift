@@ -12,7 +12,9 @@ class NewsCell: UITableViewCell {
     
     static let reuseId = "NewsCell"
 
-    @IBOutlet weak var newsTextViwq: UITextView!
+    
+  
+    @IBOutlet weak var newsTextView: UITextView!
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var commentsButton: UIButton!
