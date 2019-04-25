@@ -559,14 +559,13 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="wgZ-dv-BDI" secondAttribute="height" multiplier="1:1" id="6Al-nn-aLC"/>
                                                 <constraint firstAttribute="height" constant="30" id="M4n-m5-4Yc"/>
-                                                <constraint firstAttribute="width" constant="30" id="YQT-sd-bPm"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="YQT-sd-bPm"/>
                                             </constraints>
                                             <state key="normal" title="like" image="heart"/>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ioa-gu-1zW">
                                             <rect key="frame" x="93" y="529" width="30" height="30"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="30" id="K6K-wn-vAJ"/>
                                                 <constraint firstAttribute="width" secondItem="Ioa-gu-1zW" secondAttribute="height" multiplier="1:1" id="d0F-W9-yCD"/>
                                                 <constraint firstAttribute="height" constant="30" id="eku-8M-FgP"/>
                                             </constraints>
@@ -614,7 +613,7 @@
                                             <rect key="frame" x="164" y="529" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="6wv-xv-877" secondAttribute="height" multiplier="1:1" id="BVk-6q-RAM"/>
-                                                <constraint firstAttribute="width" constant="30" id="TqH-Ec-WD6"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="TqH-Ec-WD6"/>
                                                 <constraint firstAttribute="height" constant="30" id="pUF-ic-BGa"/>
                                             </constraints>
                                             <state key="normal" title="Share" image="share"/>
@@ -628,6 +627,7 @@
                                         <constraint firstItem="ScI-32-eZu" firstAttribute="centerY" secondItem="hnv-bz-X9k" secondAttribute="centerY" id="EFt-HB-SjE"/>
                                         <constraint firstItem="Ioa-gu-1zW" firstAttribute="centerY" secondItem="wgZ-dv-BDI" secondAttribute="centerY" id="Ivb-Du-5Fd"/>
                                         <constraint firstAttribute="trailing" secondItem="tQW-kR-T8R" secondAttribute="trailing" id="JPS-X5-M3V"/>
+                                        <constraint firstItem="pk8-uT-vLW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hnv-bz-X9k" secondAttribute="trailing" constant="8" symbolic="YES" id="Qc2-Dc-1qw"/>
                                         <constraint firstItem="L8V-p2-70j" firstAttribute="leading" secondItem="YdH-Y0-4Fc" secondAttribute="leading" id="RJC-Lp-g78"/>
                                         <constraint firstAttribute="trailing" secondItem="ScI-32-eZu" secondAttribute="trailing" constant="15" id="RZc-mi-zaU"/>
                                         <constraint firstItem="tQW-kR-T8R" firstAttribute="leading" secondItem="YdH-Y0-4Fc" secondAttribute="leading" id="Rc4-lR-Nst"/>
@@ -645,6 +645,18 @@
                                         <constraint firstItem="3ty-Wn-7Fr" firstAttribute="centerY" secondItem="wgZ-dv-BDI" secondAttribute="centerY" id="y7s-Sl-L9W"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="commentsButton" destination="Ioa-gu-1zW" id="HAN-4T-mR8"/>
+                                    <outlet property="commentsLabel" destination="Ycw-sI-ycU" id="bcj-IE-2OM"/>
+                                    <outlet property="eyeImage" destination="pk8-uT-vLW" id="xv8-IG-w9e"/>
+                                    <outlet property="likeButton" destination="wgZ-dv-BDI" id="7GI-Os-M6G"/>
+                                    <outlet property="likesLabel" destination="3ty-Wn-7Fr" id="nhF-Kz-4ox"/>
+                                    <outlet property="newsImage" destination="L8V-p2-70j" id="oLp-Ys-wGV"/>
+                                    <outlet property="newsTextViwq" destination="tQW-kR-T8R" id="ROX-Qh-n54"/>
+                                    <outlet property="seenLabel" destination="hnv-bz-X9k" id="eev-Jz-IhR"/>
+                                    <outlet property="shareButton" destination="6wv-xv-877" id="Kad-NS-1dP"/>
+                                    <outlet property="sharesLabel" destination="ScI-32-eZu" id="Too-1U-RXk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
