@@ -98,8 +98,6 @@ class FriendsTVController: UITableViewController, UISearchBarDelegate {
                 cell.friendphotoImage.image = UIImage(named: friendValues[indexPath.row].friendImageName)
                 
             }
-            //        cell.friendnameLabel.text = friends[indexPath.row].friendName
-            //        cell.friendphotoImage.image = UIImage(named: friends[indexPath.row].friendImageName)
         }
         return cell
     }

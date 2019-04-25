@@ -9,7 +9,7 @@
 import UIKit
 
 
-@IBDesignable class avatarPhotoImageViewController: UIImageView {
+@IBDesignable class AvatarPhotoImageViewController: UIImageView {
 }
 
 extension UIImageView {
