@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C40BBCD2271FCB400575298 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40BBCC2271FCB400575298 /* NewsCell.swift */; };
+		2C40BBCF2271FCDC00575298 /* NewsTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40BBCE2271FCDC00575298 /* NewsTVController.swift */; };
 		2C47106D2267831E008CA428 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C47106C2267831E008CA428 /* LikeControl.swift */; };
 		2C4C836A2262A3CD00734C4E /* ShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C83692262A3CD00734C4E /* ShadowViewController.swift */; };
 		2C5CDDAE225CDDCA00B29267 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5CDDAD225CDDC900B29267 /* FriendCell.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C40BBCC2271FCB400575298 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		2C40BBCE2271FCDC00575298 /* NewsTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTVController.swift; sourceTree = "<group>"; };
 		2C47106C2267831E008CA428 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
 		2C4C83692262A3CD00734C4E /* ShadowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowViewController.swift; sourceTree = "<group>"; };
 		2C5CDDAD225CDDC900B29267 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
@@ -88,6 +92,7 @@
 			children = (
 				2C5CDDAF225CEBBA00B29267 /* GroupCell.swift */,
 				2C5CDDAD225CDDC900B29267 /* FriendCell.swift */,
+				2C40BBCC2271FCB400575298 /* NewsCell.swift */,
 				2C5CDDB4225D2FA600B29267 /* PhotoCell.swift */,
 			);
 			path = Cells;
@@ -151,6 +156,7 @@
 				2C5CDDB1225CEBC300B29267 /* Cells */,
 				2C6519A12251542000D65F77 /* LoginScreenController.swift */,
 				2C6429F92259F15C00285078 /* MainTabbarController.swift */,
+				2C40BBCE2271FCDC00575298 /* NewsTVController.swift */,
 				2C6429F122597CE300285078 /* FriendsTVController.swift */,
 				2CFED9E02262866F003F29E8 /* AvatarPhotoImageViewController.swift */,
 				2C6429F322597D0D00285078 /* GroupsTVController.swift */,
@@ -242,6 +248,8 @@
 				2CFED9DF226241BF003F29E8 /* Lecture4ViewController.swift in Sources */,
 				2C5CDDB3225CF83D00B29267 /* RecommendedGroupsController.swift in Sources */,
 				2C65198E22514BFB00D65F77 /* AppDelegate.swift in Sources */,
+				2C40BBCF2271FCDC00575298 /* NewsTVController.swift in Sources */,
+				2C40BBCD2271FCB400575298 /* NewsCell.swift in Sources */,
 				2C6429F422597D0E00285078 /* GroupsTVController.swift in Sources */,
 				2C5CDDAE225CDDCA00B29267 /* FriendCell.swift in Sources */,
 				2C5CDDB5225D2FA600B29267 /* PhotoCell.swift in Sources */,
