@@ -538,13 +538,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="587.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQW-kR-T8R">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQW-kR-T8R">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="100" id="1AW-jr-IWa"/>
                                             </constraints>
-                                            <mutableString key="text">Дунай – вторая по ве­личине река Европы после Волги. Его общая длина составляет около 2800 км, при эт­ом 588 из них приход­ится на Сербию. Серб­ская часть реки широ­кая и мощная, поскол­ьку здесь в Дунай вп­адает несколько боль­ших рек – Морава, Ти­са, Сава, Тамиш, Нер­а, Драва.</mutableString>
+                                            <string key="text">Дунай – вторая по ве­личине река Европы после Волги. Общая длина составляет около 2800 км, при эт­ом 588 из них приход­ится на Сербию. Здесь в Дунай вп­адает несколько боль­ших рек – Морава, Ти­са, Сава, Тамиш, Нер­а.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
@@ -604,7 +604,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnv-bz-X9k">
-                                            <rect key="frame" x="199" y="533.5" width="21" height="21"/>
+                                            <rect key="frame" x="199" y="526" width="21" height="36"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -632,6 +632,7 @@
                                         <constraint firstAttribute="trailing" secondItem="ScI-32-eZu" secondAttribute="trailing" constant="15" id="RZc-mi-zaU"/>
                                         <constraint firstItem="tQW-kR-T8R" firstAttribute="leading" secondItem="YdH-Y0-4Fc" secondAttribute="leading" id="Rc4-lR-Nst"/>
                                         <constraint firstItem="Ycw-sI-ycU" firstAttribute="leading" secondItem="Ioa-gu-1zW" secondAttribute="trailing" constant="5" id="SfD-Vw-tc1"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="hnv-bz-X9k" secondAttribute="bottom" constant="15" id="XgY-DI-vdY"/>
                                         <constraint firstItem="L8V-p2-70j" firstAttribute="top" secondItem="tQW-kR-T8R" secondAttribute="bottom" id="YiG-iN-qAy"/>
                                         <constraint firstItem="6wv-xv-877" firstAttribute="leading" secondItem="Ycw-sI-ycU" secondAttribute="trailing" constant="15" id="bZB-hD-7DE"/>
                                         <constraint firstItem="Ycw-sI-ycU" firstAttribute="centerY" secondItem="3ty-Wn-7Fr" secondAttribute="centerY" id="f85-hw-QLo"/>
