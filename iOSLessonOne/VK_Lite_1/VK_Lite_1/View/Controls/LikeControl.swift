@@ -59,8 +59,6 @@ class LikeControl: UIControl {
     //MARK: - Privates
     @objc func likeTapped() {
         isLiked.toggle()
-        //heartImageView.image = isLiked ? UIImage(named: "heartred") : UIImage(named: "heart")
-        //likeNumberLabel.text = isLiked ? "1" : "0"
         likeNumberLabel.textColor = isLiked ? .red : .black
         
         if isLiked == true {
@@ -69,27 +67,27 @@ class LikeControl: UIControl {
                           options: .transitionCrossDissolve,
                           animations: {
                             self.likeNumberLabel.text = "1"
-                            })
+                          })
         UIView.transition(with: heartImageView,
-            duration: 1,
-            options: .transitionCrossDissolve,
-            animations: {
-            self.heartImageView.image = UIImage(named: "heartred")
-            })
+                          duration: 1,
+                          options: .transitionCrossDissolve,
+                          animations: {
+                            self.heartImageView.image = UIImage(named: "heartred")
+                          })
         } else {
             UIView.transition(with: likeNumberLabel,
                               duration: 1,
                               options: .transitionCrossDissolve,
                               animations: {
                                 self.likeNumberLabel.text = "0"
-                                })
+                              })
             UIView.transition(with: heartImageView,
                               duration: 1,
                               options: .transitionCrossDissolve,
                               animations: {
                                 self.heartImageView.image = UIImage(named: "heart")
-            })
-        }
+                              })
+          }
 
         sendActions(for: .valueChanged)
     }

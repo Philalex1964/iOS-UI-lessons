@@ -25,11 +25,24 @@ class NewsCell: UITableViewCell {
     @IBOutlet weak var eyeImage: UIImageView!
     @IBOutlet weak var seenLabel: UILabel!
     @IBOutlet weak var centerIndicator: UIView!
+    @IBOutlet weak var leftIndicator: UIView!
+    @IBOutlet weak var rightIndicator: UIView!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        UIView.animate(withDuration: 2, delay: 0, options: [.repeat, .autoreverse], animations: {
+            self.leftIndicator.alpha = 0
+        })
+        
+        UIView.animate(withDuration: 2, delay: 1, options: [.repeat, .autoreverse], animations: {
+            self.centerIndicator.alpha = 0
+        })
+        
+        UIView.animate(withDuration: 2, delay: 2, options: [.repeat, .autoreverse], animations: {
+            self.rightIndicator.alpha = 0
+        })
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

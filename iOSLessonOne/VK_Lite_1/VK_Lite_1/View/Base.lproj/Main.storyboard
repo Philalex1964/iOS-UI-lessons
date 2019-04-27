@@ -633,7 +633,7 @@
                                         </view>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6z-7g-a6D" userLabel="leftIndicator">
                                             <rect key="frame" x="182" y="570" width="10" height="10"/>
-                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="10" id="Ycg-Mc-pi0"/>
                                                 <constraint firstAttribute="height" constant="10" id="uUG-KG-ntM"/>
@@ -646,7 +646,7 @@
                                         </view>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNt-ec-PNt" userLabel="rightIndicator">
                                             <rect key="frame" x="222" y="570" width="10" height="10"/>
-                                            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="10" id="A6t-r7-Uva"/>
                                                 <constraint firstAttribute="width" constant="10" id="iso-iz-8xb"/>
@@ -696,10 +696,12 @@
                                     <outlet property="commentsButton" destination="Ioa-gu-1zW" id="HAN-4T-mR8"/>
                                     <outlet property="commentsLabel" destination="Ycw-sI-ycU" id="bcj-IE-2OM"/>
                                     <outlet property="eyeImage" destination="pk8-uT-vLW" id="xv8-IG-w9e"/>
+                                    <outlet property="leftIndicator" destination="j6z-7g-a6D" id="Zpq-Ld-GNi"/>
                                     <outlet property="likeButton" destination="wgZ-dv-BDI" id="7GI-Os-M6G"/>
                                     <outlet property="likesLabel" destination="3ty-Wn-7Fr" id="nhF-Kz-4ox"/>
                                     <outlet property="newsImage" destination="L8V-p2-70j" id="oLp-Ys-wGV"/>
                                     <outlet property="newsTextView" destination="tQW-kR-T8R" id="xaa-3Q-tWV"/>
+                                    <outlet property="rightIndicator" destination="dNt-ec-PNt" id="V1T-Lp-msV"/>
                                     <outlet property="seenLabel" destination="hnv-bz-X9k" id="eev-Jz-IhR"/>
                                     <outlet property="shareButton" destination="6wv-xv-877" id="Kad-NS-1dP"/>
                                     <outlet property="sharesLabel" destination="ScI-32-eZu" id="Too-1U-RXk"/>
