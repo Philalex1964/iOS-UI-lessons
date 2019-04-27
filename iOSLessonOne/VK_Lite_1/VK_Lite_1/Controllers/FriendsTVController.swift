@@ -102,6 +102,10 @@ class FriendsTVController: UITableViewController, UISearchBarDelegate {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if searching {
             return nil
@@ -116,10 +120,6 @@ class FriendsTVController: UITableViewController, UISearchBarDelegate {
         } else {
             return firstLetterSectionTitle
         }
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     // Override to support editing the table view.
