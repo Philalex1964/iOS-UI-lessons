@@ -24,6 +24,7 @@ class NewsCell: UITableViewCell {
     @IBOutlet weak var commentsLabel: UILabel!
     @IBOutlet weak var eyeImage: UIImageView!
     @IBOutlet weak var seenLabel: UILabel!
+    @IBOutlet weak var centerIndicator: UIView!
     
     
     override func awakeFromNib() {

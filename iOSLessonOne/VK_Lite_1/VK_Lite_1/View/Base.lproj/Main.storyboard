@@ -618,7 +618,7 @@
                                             </constraints>
                                             <state key="normal" title="Share" image="share"/>
                                         </button>
-                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTY-TZ-5aq" userLabel="centerActIndView1">
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTY-TZ-5aq" userLabel="centerIndicator">
                                             <rect key="frame" x="202" y="570" width="10" height="10"/>
                                             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -631,7 +631,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
-                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6z-7g-a6D" userLabel="leftActIndView1">
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6z-7g-a6D" userLabel="leftIndicator">
                                             <rect key="frame" x="182" y="570" width="10" height="10"/>
                                             <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
@@ -644,7 +644,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
-                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNt-ec-PNt" userLabel="rightActIndView1">
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNt-ec-PNt" userLabel="rightIndicator">
                                             <rect key="frame" x="222" y="570" width="10" height="10"/>
                                             <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
@@ -692,6 +692,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="centerIndicator" destination="JTY-TZ-5aq" id="ZcN-OJ-6RS"/>
                                     <outlet property="commentsButton" destination="Ioa-gu-1zW" id="HAN-4T-mR8"/>
                                     <outlet property="commentsLabel" destination="Ycw-sI-ycU" id="bcj-IE-2OM"/>
                                     <outlet property="eyeImage" destination="pk8-uT-vLW" id="xv8-IG-w9e"/>
