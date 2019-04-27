@@ -16,7 +16,7 @@ struct Friend {
     let friendGender: Gender
     var groupMemberNumber: Int
     var friendImageName: String
-    //let friendImage: UIIMage
+    let friendImage: UIImage?
 }
 
 

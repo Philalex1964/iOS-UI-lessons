@@ -10,11 +10,6 @@ import UIKit
 
 
 @IBDesignable class avatarPhotoImageViewController: UIImageView {
-//    @IBInspectable public var filled = false {
-//        didSet {
-//            setNeedsDisplay()
-//        }
-//    }
 }
 
 extension UIImageView {
@@ -24,7 +19,7 @@ extension UIImageView {
     }
 }
 
-extension UIImageView {
+/*extension UIImageView {
     @IBInspectable var shadowColor: CGColor {
         set { layer.shadowColor = newValue}
         get { return layer.shadowColor ?? UIColor.black.cgColor}
@@ -37,7 +32,7 @@ extension UIImageView {
         set { layer.shadowRadius = newValue}
         get { return layer.shadowRadius}
     }
-}
+}*/
 
 
 

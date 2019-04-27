@@ -12,6 +12,8 @@ class PhotosOfFriendsCVController: UICollectionViewController {
 
     public var friendName = ""
     
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +29,15 @@ class PhotosOfFriendsCVController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhotoCell.reuseId, for: indexPath) as? PhotoCell else { fatalError()}
-
+        cell.likeControl.addTarget(self, action: #selector(cellLikePressed(_:)), for: .valueChanged)
+        
         return cell
+    }
+    
+    //MARK _ Private
+    @objc func cellLikePressed(_ sender: LikeControl) {
+        
+        
+        print("The cell liked status set to: \(sender.isLiked)")
     }
 }

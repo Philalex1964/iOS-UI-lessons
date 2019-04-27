@@ -301,56 +301,92 @@
         <scene sceneID="nq5-6a-lLk">
             <objects>
                 <tableViewController id="57Z-oH-De7" customClass="FriendsTVController" customModule="VK_Lite_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zh5-S5-Dm4">
+                    <tableView key="view" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zh5-S5-Dm4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="169" id="WPF-MQ-DnK" customClass="FriendCell" customModule="VK_Lite_1" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="169"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="54" id="WPF-MQ-DnK" customClass="FriendCell" customModule="VK_Lite_1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WPF-MQ-DnK" id="ZM5-J8-0ya">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="168.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="53.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJD-9V-mkb" customClass="ShadowViewController" customModule="VK_Lite_1" customModuleProvider="target">
+                                            <rect key="frame" x="328" y="2.5" width="50" height="50"/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="uJD-9V-mkb" secondAttribute="height" multiplier="1:1" id="1P5-s0-7xE"/>
+                                                <constraint firstAttribute="height" constant="50" id="DdV-W6-adR"/>
+                                                <constraint firstAttribute="width" constant="50" id="emv-ZH-67O"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                    <size key="value" width="4" height="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpy-ZH-olv">
-                                            <rect key="frame" x="36" y="71.5" width="342" height="26"/>
+                                            <rect key="frame" x="36" y="14.5" width="342" height="26"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-xP-M4J" userLabel="FriendphotoImage" customClass="avatarPhotoImageViewController" customModule="VK_Lite_1" customModuleProvider="target">
-                                            <rect key="frame" x="318" y="54.5" width="60" height="60"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="ueW-xP-M4J" userLabel="FriendphotoImage" customClass="avatarPhotoImageViewController" customModule="VK_Lite_1" customModuleProvider="target">
+                                            <rect key="frame" x="328" y="2.5" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="ueW-xP-M4J" secondAttribute="height" multiplier="1:1" id="1Vf-9e-kVI"/>
-                                                <constraint firstAttribute="height" constant="60" id="fAx-0e-Xf7"/>
-                                                <constraint firstAttribute="width" constant="60" id="q9C-uk-lDs"/>
+                                                <constraint firstAttribute="height" constant="50" id="fAx-0e-Xf7"/>
+                                                <constraint firstAttribute="width" constant="50" id="q9C-uk-lDs"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="30"/>
+                                                    <integer key="value" value="25"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="30"/>
+                                                    <real key="value" value="25"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="gpy-ZH-olv" secondAttribute="trailing" constant="16" id="3QL-FB-fGg"/>
+                                        <constraint firstAttribute="bottom" secondItem="ueW-xP-M4J" secondAttribute="bottom" constant="2" id="5TI-P2-Sci"/>
+                                        <constraint firstItem="uJD-9V-mkb" firstAttribute="centerX" secondItem="ueW-xP-M4J" secondAttribute="centerX" id="Dsu-fk-cB9"/>
                                         <constraint firstItem="gpy-ZH-olv" firstAttribute="leading" secondItem="ZM5-J8-0ya" secondAttribute="leadingMargin" constant="16" id="UVH-c9-3p9"/>
+                                        <constraint firstItem="uJD-9V-mkb" firstAttribute="centerY" secondItem="ueW-xP-M4J" secondAttribute="centerY" id="XbM-EW-Jhc"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="ueW-xP-M4J" secondAttribute="trailing" constant="16" id="XxA-0C-tgb"/>
                                         <constraint firstItem="gpy-ZH-olv" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="fFF-wP-gyT"/>
                                         <constraint firstItem="ueW-xP-M4J" firstAttribute="centerY" secondItem="ZM5-J8-0ya" secondAttribute="centerY" id="iZ1-p8-YiP"/>
+                                        <constraint firstItem="ueW-xP-M4J" firstAttribute="top" secondItem="ZM5-J8-0ya" secondAttribute="top" constant="2" id="j19-n1-2UP"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="friendnameLabel" destination="gpy-ZH-olv" id="K7f-ig-v73"/>
                                     <outlet property="friendphotoImage" destination="ueW-xP-M4J" id="VEh-iZ-yhK"/>
+                                    <outlet property="shadowView" destination="uJD-9V-mkb" id="X8q-le-IGB"/>
                                     <segue destination="FpE-P5-6uc" kind="show" identifier="Show Photo" id="x8Y-tC-dm2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="27"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="57Z-oH-De7" id="HgL-OP-SEw"/>
                             <outlet property="delegate" destination="57Z-oH-De7" id="KZS-ec-cuZ"/>
@@ -379,6 +415,11 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <view key="backgroundView" contentMode="scaleToFill" id="HNO-Re-pgS">
+                            <rect key="frame" x="0.0" y="-88" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="bV6-bL-r6J" userLabel="PhotoCell" customClass="PhotoCell" customModule="VK_Lite_1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
@@ -390,17 +431,40 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alexey" translatesAutoresizingMaskIntoConstraints="NO" id="dpv-g9-cQu">
                                             <rect key="frame" x="0.0" y="0.0" width="159" height="171"/>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7An-B4-WHD" customClass="LikeControl" customModule="VK_Lite_1" customModuleProvider="target">
+                                            <rect key="frame" x="119" y="131" width="40" height="40"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="21m-8v-8zC"/>
+                                                <constraint firstAttribute="width" secondItem="7An-B4-WHD" secondAttribute="height" multiplier="1:1" id="YM2-PT-jNL"/>
+                                                <constraint firstAttribute="height" constant="40" id="l1m-7V-6Q9"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="No8-Hw-zDj">
+                                            <rect key="frame" x="102" y="131" width="17" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="0KY-Jz-O5Z"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="dpv-g9-cQu" secondAttribute="bottom" id="0WW-SU-ySF"/>
                                     <constraint firstAttribute="trailing" secondItem="dpv-g9-cQu" secondAttribute="trailing" id="APV-Qe-N07"/>
+                                    <constraint firstAttribute="bottom" secondItem="No8-Hw-zDj" secondAttribute="bottom" id="c2q-Zh-ntp"/>
                                     <constraint firstItem="dpv-g9-cQu" firstAttribute="top" secondItem="bV6-bL-r6J" secondAttribute="top" id="ceE-fz-4bm"/>
+                                    <constraint firstAttribute="trailing" secondItem="7An-B4-WHD" secondAttribute="trailing" id="cuY-6P-tbS"/>
+                                    <constraint firstAttribute="bottom" secondItem="7An-B4-WHD" secondAttribute="bottom" id="dAc-63-PHR"/>
                                     <constraint firstAttribute="trailing" secondItem="dpv-g9-cQu" secondAttribute="trailing" id="hRf-BB-wyI"/>
                                     <constraint firstAttribute="bottom" secondItem="dpv-g9-cQu" secondAttribute="bottom" id="j1u-fG-vHe"/>
                                     <constraint firstItem="dpv-g9-cQu" firstAttribute="leading" secondItem="bV6-bL-r6J" secondAttribute="leading" id="r2I-gt-dNr"/>
+                                    <constraint firstItem="7An-B4-WHD" firstAttribute="leading" secondItem="No8-Hw-zDj" secondAttribute="trailing" id="yKq-Xo-eHZ"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="likeControl" destination="7An-B4-WHD" id="o23-Kn-gzO"/>
                                     <outlet property="photoImageView" destination="dpv-g9-cQu" id="XkS-gM-RIp"/>
                                 </connections>
                             </collectionViewCell>

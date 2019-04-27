@@ -16,10 +16,10 @@ class FriendCell: UITableViewCell {
     
     @IBOutlet weak var friendnameLabel: UILabel!
     
+    @IBOutlet weak var shadowView: ShadowViewController!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
     }
 }
 
