@@ -618,6 +618,45 @@
                                             </constraints>
                                             <state key="normal" title="Share" image="share"/>
                                         </button>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTY-TZ-5aq" userLabel="centerActIndView1">
+                                            <rect key="frame" x="202" y="570" width="10" height="10"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="10" id="Lut-19-iUo"/>
+                                                <constraint firstAttribute="width" constant="10" id="Vfw-Js-kO4"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNt-ec-PNt" userLabel="rightActIndView1">
+                                            <rect key="frame" x="207" y="570" width="10" height="10"/>
+                                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="10" id="A6t-r7-Uva"/>
+                                                <constraint firstAttribute="width" constant="10" id="iso-iz-8xb"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j6z-7g-a6D" userLabel="leftActIndView1">
+                                            <rect key="frame" x="207" y="570" width="10" height="10"/>
+                                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="10" id="Ycg-Mc-pi0"/>
+                                                <constraint firstAttribute="height" constant="10" id="uUG-KG-ntM"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="6wv-xv-877" firstAttribute="centerY" secondItem="wgZ-dv-BDI" secondAttribute="centerY" id="4UZ-IQ-9L1"/>
@@ -625,8 +664,10 @@
                                         <constraint firstItem="tQW-kR-T8R" firstAttribute="top" secondItem="YdH-Y0-4Fc" secondAttribute="top" id="9Hy-G9-Gka"/>
                                         <constraint firstItem="ScI-32-eZu" firstAttribute="leading" secondItem="pk8-uT-vLW" secondAttribute="trailing" constant="5" id="A3d-zq-h7J"/>
                                         <constraint firstItem="ScI-32-eZu" firstAttribute="centerY" secondItem="hnv-bz-X9k" secondAttribute="centerY" id="EFt-HB-SjE"/>
+                                        <constraint firstItem="JTY-TZ-5aq" firstAttribute="centerX" secondItem="YdH-Y0-4Fc" secondAttribute="centerX" id="HYV-Pq-up8"/>
                                         <constraint firstItem="Ioa-gu-1zW" firstAttribute="centerY" secondItem="wgZ-dv-BDI" secondAttribute="centerY" id="Ivb-Du-5Fd"/>
                                         <constraint firstAttribute="trailing" secondItem="tQW-kR-T8R" secondAttribute="trailing" id="JPS-X5-M3V"/>
+                                        <constraint firstItem="JTY-TZ-5aq" firstAttribute="trailing" secondItem="dNt-ec-PNt" secondAttribute="leading" constant="5" id="LBb-bj-rxH"/>
                                         <constraint firstItem="pk8-uT-vLW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hnv-bz-X9k" secondAttribute="trailing" constant="8" symbolic="YES" id="Qc2-Dc-1qw"/>
                                         <constraint firstItem="L8V-p2-70j" firstAttribute="leading" secondItem="YdH-Y0-4Fc" secondAttribute="leading" id="RJC-Lp-g78"/>
                                         <constraint firstAttribute="trailing" secondItem="ScI-32-eZu" secondAttribute="trailing" constant="15" id="RZc-mi-zaU"/>
@@ -635,7 +676,11 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="hnv-bz-X9k" secondAttribute="bottom" constant="15" id="XgY-DI-vdY"/>
                                         <constraint firstItem="L8V-p2-70j" firstAttribute="top" secondItem="tQW-kR-T8R" secondAttribute="bottom" id="YiG-iN-qAy"/>
                                         <constraint firstItem="6wv-xv-877" firstAttribute="leading" secondItem="Ycw-sI-ycU" secondAttribute="trailing" constant="15" id="bZB-hD-7DE"/>
+                                        <constraint firstItem="JTY-TZ-5aq" firstAttribute="bottom" secondItem="YdH-Y0-4Fc" secondAttribute="bottomMargin" constant="3" id="drG-Gk-nQ8"/>
+                                        <constraint firstItem="j6z-7g-a6D" firstAttribute="centerY" secondItem="JTY-TZ-5aq" secondAttribute="centerY" id="dw2-y8-Tah"/>
+                                        <constraint firstItem="JTY-TZ-5aq" firstAttribute="trailing" secondItem="dNt-ec-PNt" secondAttribute="leading" constant="5" id="eKD-F3-7bD"/>
                                         <constraint firstItem="Ycw-sI-ycU" firstAttribute="centerY" secondItem="3ty-Wn-7Fr" secondAttribute="centerY" id="f85-hw-QLo"/>
+                                        <constraint firstItem="dNt-ec-PNt" firstAttribute="centerY" secondItem="JTY-TZ-5aq" secondAttribute="centerY" id="fIo-hv-01O"/>
                                         <constraint firstItem="3ty-Wn-7Fr" firstAttribute="leading" secondItem="wgZ-dv-BDI" secondAttribute="trailing" constant="5" id="feB-OA-Tna"/>
                                         <constraint firstItem="hnv-bz-X9k" firstAttribute="leading" secondItem="6wv-xv-877" secondAttribute="trailing" constant="5" id="kp4-yp-pZ3"/>
                                         <constraint firstAttribute="trailing" secondItem="L8V-p2-70j" secondAttribute="trailing" id="rQl-4C-cnV"/>
