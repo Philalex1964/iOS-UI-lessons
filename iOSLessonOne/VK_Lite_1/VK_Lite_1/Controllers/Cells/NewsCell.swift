@@ -31,7 +31,7 @@ class NewsCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
         UIView.animate(withDuration: 2, delay: 0, options: [.repeat, .autoreverse], animations: {
             self.leftIndicator.alpha = 0
         })
@@ -44,11 +44,12 @@ class NewsCell: UITableViewCell {
             self.rightIndicator.alpha = 0
         })
     }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+      
     }
 
 }
