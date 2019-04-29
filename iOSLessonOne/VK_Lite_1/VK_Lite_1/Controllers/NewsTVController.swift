@@ -1,42 +1,50 @@
 //
-//  GroupsTVController.swift
+//  NewsTVController.swift
 //  VK_Lite_1
 //
-//  Created by Александр Филиппов on 07.04.2019.
+//  Created by Александр Филиппов on 25.04.2019.
 //  Copyright © 2019 Philalex. All rights reserved.
 //
 
 import UIKit
-import CoreData
 
-class GroupsTVController: UITableViewController {
-    
-    var group: GroupMO!
-    
-    public var groups: [GroupMO] = [
-        
-    ]
-    
+class NewsTVController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+        
+
     }
 
     // MARK: - Table view data source
 
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return groups.count
+        // #warning Incomplete implementation, return the number of rows
+        return 1
     }
 
- 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: GroupCell.reuseId, for: indexPath) as? GroupCell else { fatalError("Cell cannot be dequeued")}
-
-        cell.groupnameLabel.text = groups[indexPath.row].groupName
-        cell.groupImage.image = UIImage(named: groups[indexPath.row].groupImageName!)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath) as? NewsCell else {fatalError("Cell cannot be dequeued")}
         
         return cell
     }
- 
 
     /*
     // Override to support conditional editing of the table view.
@@ -46,16 +54,17 @@ class GroupsTVController: UITableViewController {
     }
     */
 
-    
+    /*
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            groups.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-        }
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
     }
-  
+    */
 
     /*
     // Override to support rearranging the table view.
@@ -72,7 +81,7 @@ class GroupsTVController: UITableViewController {
     }
     */
 
- 
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -80,20 +89,6 @@ class GroupsTVController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    
-    @IBAction func addGroup(segue: UIStoryboardSegue) {
-        if let recommendedGroupsController = segue.source as? RecommendedGroupsController,
-            let indexPath = recommendedGroupsController.tableView.indexPathForSelectedRow {
-                    let newGroup = recommendedGroupsController.groups[indexPath.row]
-            
-                    guard !groups.contains(where: { group -> Bool in
-                        return group.groupName == newGroup.groupName
-                    }) else { return }
-                    groups.append(newGroup)
-                    //tableView.reloadData()
-                    let newIndexPath = IndexPath(item: groups.count-1, section: 0)
-                    tableView.insertRows(at: [newIndexPath], with: .automatic)
-        }
-    }
-}
+    */
 
+}

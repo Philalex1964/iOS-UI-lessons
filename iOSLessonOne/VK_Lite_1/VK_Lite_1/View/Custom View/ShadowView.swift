@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class ShadowViewController: UIView {
+@IBDesignable class ShadowView: UIView {
     
     @IBInspectable public var filled = true {
         didSet {

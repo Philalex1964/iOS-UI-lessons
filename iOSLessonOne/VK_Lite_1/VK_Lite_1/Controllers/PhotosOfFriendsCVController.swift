@@ -18,6 +18,8 @@ class PhotosOfFriendsCVController: UICollectionViewController {
         super.viewDidLoad()
         
         title = friendName
+        
+        
     }
 
     
