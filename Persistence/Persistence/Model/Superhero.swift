@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-
+@objcMembers
 class Superhero: Object {
     dynamic var id: Int = 0
     dynamic var name: String = ""
